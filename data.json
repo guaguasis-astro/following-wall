@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T11:36:43.109Z",
+  "updatedAt": "2026-06-07T11:44:10.463Z",
   "items": [
     {
       "platform": "bilibili",
@@ -19,7 +19,8 @@
       "title": "毕业8年的HR项目负责人，跳槽后陷入目标真空，面对涨薪50%的offer也提不起劲，感觉职业生涯走到尽头。工作只是糊口的工具，真正的快乐要向外求，",
       "cover": "https://i1.hdslb.com/bfs/archive/f2a32f959ada76f11bfc073d9fb4158a4a9a405b.jpg",
       "link": "https://www.bilibili.com/video/BV1zKVZ6hE7w",
-      "publishedAt": "2026-06-05T12:50:00.000Z"
+      "publishedAt": "2026-06-05T12:50:00.000Z",
+      "stale": true
     },
     {
       "platform": "bilibili",
@@ -29,7 +30,8 @@
       "title": "当表达成为话语权，我就是风暴本身| 32min超长",
       "cover": "https://i1.hdslb.com/bfs/archive/d2101b24df279ef7db74382aa6f7cf836a68bd38.jpg",
       "link": "https://www.bilibili.com/video/BV1XvVp69EvC",
-      "publishedAt": "2026-05-28T09:40:12.000Z"
+      "publishedAt": "2026-05-28T09:40:12.000Z",
+      "stale": true
     },
     {
       "platform": "bilibili",
