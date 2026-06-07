@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-06-07T14:17:55.577Z",
+  "updatedAt": "2026-06-07T14:31:15.267Z",
   "items": [
+    {
+      "platform": "youtube",
+      "creator": "Helena Woods",
+      "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
+      "creatorAvatar": "",
+      "title": "It’s mentorship season",
+      "cover": "https://i4.ytimg.com/vi/W1XTwsl9FQc/hqdefault.jpg",
+      "link": "https://www.youtube.com/shorts/W1XTwsl9FQc",
+      "publishedAt": "2026-06-07T14:11:29.000Z"
+    },
     {
       "platform": "bilibili",
       "creator": "像素范",
@@ -9,18 +19,7 @@
       "title": "崩老头、公狗剧场、situationship：你看不懂的现象，背后是一个时代",
       "cover": "https://i2.hdslb.com/bfs/archive/091638071c50529a077e59bc34a0e01e85d0dd21.jpg",
       "link": "https://www.bilibili.com/video/BV1fGE469ERY",
-      "publishedAt": "2026-06-07T08:38:16.000Z",
-      "stale": true
-    },
-    {
-      "platform": "youtube",
-      "creator": "Helena Woods",
-      "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
-      "creatorAvatar": "",
-      "title": "Your Fate and Timing using Zodiacal Releasing with Astrologer Patrick Watson",
-      "cover": "https://i1.ytimg.com/vi/D-_jWs5Whf4/hqdefault.jpg",
-      "link": "https://www.youtube.com/watch?v=D-_jWs5Whf4",
-      "publishedAt": "2026-06-05T23:07:15.000Z"
+      "publishedAt": "2026-06-07T08:38:16.000Z"
     },
     {
       "platform": "bilibili",
@@ -80,8 +79,7 @@
       "title": "当表达成为话语权，我就是风暴本身| 32min超长",
       "cover": "https://i1.hdslb.com/bfs/archive/d2101b24df279ef7db74382aa6f7cf836a68bd38.jpg",
       "link": "https://www.bilibili.com/video/BV1XvVp69EvC",
-      "publishedAt": "2026-05-28T09:40:12.000Z",
-      "stale": true
+      "publishedAt": "2026-05-28T09:40:12.000Z"
     },
     {
       "platform": "bilibili",
