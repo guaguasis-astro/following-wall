@@ -261,8 +261,9 @@ export async function fetchBilibiliLatest(subs) {
       link: video.link,
       publishedAt: video.publishedAt,
     })
-    // longer politeness delay between UPs — B站 throttles bursts even with login cookie
-    await new Promise(r => setTimeout(r, 1500))
+    // longer politeness delay between UPs — B站 throttles bursts even with login cookie.
+    // 6s after seeing 412 on UPs 3 & 4 in CI (the cookie is fine, the per-account rate is the limit).
+    await new Promise(r => setTimeout(r, 6000))
   }
   return out
 }

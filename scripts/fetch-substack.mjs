@@ -10,7 +10,25 @@ const UA =
   'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 
 async function fetchText(url) {
-  const resp = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/rss+xml, application/xml, text/xml, */*' } })
+  // Substack's WAF returns 403 on *.substack.com when the request lacks modern
+  // Chrome's Sec-Fetch-* / Sec-Ch-Ua headers — custom domains don't have this rule.
+  // Sending the full set makes the request indistinguishable from a real browser GET.
+  const resp = await fetch(url, {
+    headers: {
+      'User-Agent': UA,
+      Accept: 'application/rss+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+      'Sec-Ch-Ua-Mobile': '?0',
+      'Sec-Ch-Ua-Platform': '"macOS"',
+      'Sec-Fetch-Dest': 'document',
+      'Sec-Fetch-Mode': 'navigate',
+      'Sec-Fetch-Site': 'none',
+      'Sec-Fetch-User': '?1',
+      'Upgrade-Insecure-Requests': '1',
+    },
+  })
   if (!resp.ok) throw new Error(`HTTP ${resp.status} ${url}`)
   return resp.text()
 }
