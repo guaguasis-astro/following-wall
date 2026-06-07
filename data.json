@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T11:10:49.730Z",
+  "updatedAt": "2026-06-07T11:29:26.523Z",
   "items": [
     {
       "platform": "bilibili",
@@ -10,6 +10,16 @@
       "cover": "https://i2.hdslb.com/bfs/archive/091638071c50529a077e59bc34a0e01e85d0dd21.jpg",
       "link": "https://www.bilibili.com/video/BV1fGE469ERY",
       "publishedAt": "2026-06-07T08:38:16.000Z"
+    },
+    {
+      "platform": "bilibili",
+      "creator": "水球泡",
+      "creatorUrl": "https://space.bilibili.com/543740406",
+      "creatorAvatar": "",
+      "title": "毕业8年的HR项目负责人，跳槽后陷入目标真空，面对涨薪50%的offer也提不起劲，感觉职业生涯走到尽头。工作只是糊口的工具，真正的快乐要向外求，",
+      "cover": "https://i1.hdslb.com/bfs/archive/f2a32f959ada76f11bfc073d9fb4158a4a9a405b.jpg",
+      "link": "https://www.bilibili.com/video/BV1zKVZ6hE7w",
+      "publishedAt": "2026-06-05T12:50:00.000Z"
     },
     {
       "platform": "bilibili",
