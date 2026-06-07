@@ -225,14 +225,39 @@ function normalizeCover(url) {
   return url.replace(/^http:/, 'https:')
 }
 
+// Deterministically shuffle `arr` by a string seed — so each CI run rotates which UP
+// goes first. B站 lets the first 2-3 requests through then 412s the rest, so over
+// several runs every UP eventually lands in a "lucky" slot.
+function shuffleBySeed(arr, seed) {
+  const a = arr.slice()
+  let h = 0
+  for (const c of seed) h = (h * 31 + c.charCodeAt(0)) >>> 0
+  for (let i = a.length - 1; i > 0; i--) {
+    h = (h * 1664525 + 1013904223) >>> 0
+    const j = h % (i + 1)
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 export async function fetchBilibiliLatest(subs) {
-  const jar = await primeCookieJar()
   const out = []
-  for (const sub of subs) {
+  // Rotate order per run so different UPs get the "first 2 slots" each time.
+  // Daily seed = YYYYMMDDHH (so a same-day rerun keeps the same order, which
+  // helps debugging, but tomorrow's cron picks a new permutation).
+  const seed = new Date().toISOString().slice(0, 13)
+  const ordered = shuffleBySeed(subs, seed)
+  console.log(`  (run order: ${ordered.map(s => s.name).join(' → ')})`)
+
+  for (const sub of ordered) {
     const { name, uid } = sub
     const creatorUrl = `https://space.bilibili.com/${uid}`
     let video = null
     const errors = []
+    // CRITICAL: fresh cookie jar per UP. B站 412s after ~2-3 requests on the
+    // same session, regardless of inter-request delay. A new jar = new buvid3
+    // = new session in their eyes, even though SESSDATA still identifies us.
+    const jar = await primeCookieJar()
     for (const [label, fn] of [
       ['wbi', () => strategyWbi(uid, jar)],
       ['dynamic', () => strategyDynamic(uid, jar)],
@@ -261,9 +286,9 @@ export async function fetchBilibiliLatest(subs) {
       link: video.link,
       publishedAt: video.publishedAt,
     })
-    // longer politeness delay between UPs — B站 throttles bursts even with login cookie.
-    // 6s after seeing 412 on UPs 3 & 4 in CI (the cookie is fine, the per-account rate is the limit).
-    await new Promise(r => setTimeout(r, 6000))
+    // Politeness delay between UPs — still useful even with fresh sessions,
+    // to spread the requests so B站's IP-level rate window doesn't trip either.
+    await new Promise(r => setTimeout(r, 4000))
   }
   return out
 }
