@@ -1,0 +1,11 @@
+{
+  "name": "following-wall",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A static wall of latest posts from the creators 瓜瓜 follows on B站 / YouTube / Substack.",
+  "scripts": {
+    "fetch": "node scripts/fetch-all.mjs",
+    "preview": "open index.html"
+  }
+}

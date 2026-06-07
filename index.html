@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>瓜瓜的关注墙</title>
+<style>
+  :root {
+    --bg: #f7f6f3;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --muted: #8a8a8a;
+    --line: rgba(0,0,0,.06);
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.04);
+    --shadow-hover: 0 2px 6px rgba(0,0,0,.06), 0 10px 28px rgba(0,0,0,.08);
+    --radius: 14px;
+    --bili: #00aeec;
+    --yt:   #ff0033;
+    --sub:  #ff6719;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 24px 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+  header .updated {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8px 16px 60px;
+  }
+
+  /* CSS columns masonry — order is top-to-bottom-then-next-column, which
+     matches the 'newest first' reading order for this kind of wall. */
+  .grid {
+    column-count: 5;
+    column-gap: 14px;
+  }
+  @media (max-width: 1200px) { .grid { column-count: 4; } }
+  @media (max-width: 900px)  { .grid { column-count: 3; } }
+  @media (max-width: 640px)  { .grid { column-count: 2; } }
+
+  .card {
+    break-inside: avoid;
+    background: var(--card);
+    border-radius: var(--radius);
+    margin: 0 0 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .card a.cover-link,
+  .card a.creator-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+
+  .cover {
+    width: 100%;
+    display: block;
+    background: #ececec;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .card.no-cover .cover-placeholder {
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, #f3efe7, #efe6d8);
+    display: flex; align-items: center; justify-content: center;
+    color: #b8a98a; font-size: 13px;
+  }
+
+  .body { padding: 10px 12px 12px; }
+  .title {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--text);
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ddd;
+    flex: 0 0 auto;
+    object-fit: cover;
+  }
+  .creator-name {
+    color: #444;
+    max-width: 9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .creator-link:hover .creator-name { color: #000; text-decoration: underline; }
+  .dot { color: #ddd; }
+
+  .platform-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0,0,0,.55);
+    color: #fff;
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 999px;
+    line-height: 1;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .platform-badge.bilibili { background: var(--bili); }
+  .platform-badge.youtube  { background: var(--yt); }
+  .platform-badge.substack { background: var(--sub); }
+
+  .stale-tag {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: rgba(255,255,255,.85);
+    color: #b58a00;
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 999px;
+    line-height: 1;
+  }
+
+  .empty, .error {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>瓜瓜的关注墙</h1>
+    <span class="updated" id="updated"></span>
+  </header>
+  <main>
+    <div id="grid" class="grid"></div>
+    <div id="status"></div>
+  </main>
+
+<script type="module">
+  const PLATFORM_LABEL = { bilibili: 'B站', youtube: 'YouTube', substack: 'Substack' }
+
+  function relTime(iso) {
+    if (!iso) return ''
+    const then = new Date(iso).getTime()
+    if (Number.isNaN(then)) return ''
+    const diffSec = Math.max(1, Math.round((Date.now() - then) / 1000))
+    if (diffSec < 60)        return `${diffSec} 秒前`
+    if (diffSec < 3600)      return `${Math.floor(diffSec / 60)} 分钟前`
+    if (diffSec < 86400)     return `${Math.floor(diffSec / 3600)} 小时前`
+    if (diffSec < 86400 * 30)return `${Math.floor(diffSec / 86400)} 天前`
+    if (diffSec < 86400 * 365)return `${Math.floor(diffSec / 86400 / 30)} 个月前`
+    return `${Math.floor(diffSec / 86400 / 365)} 年前`
+  }
+
+  function escapeHtml(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;',
+    }[c]))
+  }
+
+  function renderCard(item) {
+    const platform = item.platform || ''
+    const label = PLATFORM_LABEL[platform] || platform
+    const cover = item.cover
+      ? `<img class="cover" loading="lazy" src="${escapeHtml(item.cover)}" alt="" referrerpolicy="no-referrer"
+            onerror="this.parentElement.parentElement.classList.add('no-cover'); this.replaceWith(Object.assign(document.createElement('div'),{className:'cover-placeholder',textContent:'封面加载失败'}));" />`
+      : `<div class="cover-placeholder">无封面</div>`
+    const coverWrap = item.link
+      ? `<a class="cover-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener">${cover}</a>`
+      : cover
+    const avatar = item.creatorAvatar
+      ? `<img class="avatar" src="${escapeHtml(item.creatorAvatar)}" alt="" referrerpolicy="no-referrer"
+            onerror="this.style.display='none'" />`
+      : `<span class="avatar"></span>`
+    const creatorLink = item.creatorUrl
+      ? `<a class="creator-link" href="${escapeHtml(item.creatorUrl)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;">${avatar}<span class="creator-name">${escapeHtml(item.creator)}</span></a>`
+      : `<span style="display:inline-flex;align-items:center;gap:6px;">${avatar}<span class="creator-name">${escapeHtml(item.creator)}</span></span>`
+
+    return `
+      <article class="card${item.cover ? '' : ' no-cover'}">
+        <span class="platform-badge ${platform}">${escapeHtml(label)}</span>
+        ${item.stale ? '<span class="stale-tag">未更新</span>' : ''}
+        ${coverWrap}
+        <div class="body">
+          <h3 class="title">${escapeHtml(item.title || '(无标题)')}</h3>
+          <div class="meta">
+            ${creatorLink}
+            <span class="dot">·</span>
+            <span>${escapeHtml(relTime(item.publishedAt))}</span>
+          </div>
+        </div>
+      </article>
+    `
+  }
+
+  async function load() {
+    const grid = document.getElementById('grid')
+    const status = document.getElementById('status')
+    const updated = document.getElementById('updated')
+    try {
+      const resp = await fetch('data.json?t=' + Date.now())
+      if (!resp.ok) throw new Error('HTTP ' + resp.status)
+      const data = await resp.json()
+      const items = data.items || []
+      if (data.updatedAt) {
+        updated.textContent = '· 更新于 ' + new Date(data.updatedAt).toLocaleString('zh-CN', { hour12: false })
+      }
+      if (!items.length) {
+        status.innerHTML = '<div class="empty">还没有数据 —— 先在 GitHub 上手动触发一次 workflow,或本地跑 <code>node scripts/fetch-all.mjs</code></div>'
+        return
+      }
+      grid.innerHTML = items.map(renderCard).join('')
+    } catch (e) {
+      status.innerHTML = '<div class="error">加载 data.json 失败:' + escapeHtml(e.message)
+        + '<br/><small>如果你是双击 HTML 打开的,浏览器可能拦截了本地 fetch。请用 <code>python3 -m http.server</code> 起一个本地服务,或直接看部署版。</small></div>'
+    }
+  }
+
+  load()
+</script>
+</body>
+</html>
