@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-06-07T14:31:15.267Z",
+  "updatedAt": "2026-06-07T14:38:12.440Z",
   "items": [
+    {
+      "platform": "substack",
+      "creator": "hussainibarra",
+      "creatorUrl": "https://hussainibarra.substack.com/",
+      "creatorAvatar": "",
+      "title": "The fastest way to grow on social media (with zero followers & experience)",
+      "cover": "",
+      "link": "https://hussainibarra.substack.com/p/how-to-finally-escape-beginners-hell",
+      "publishedAt": "2026-06-07T14:38:11.126Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "attheinnerself",
+      "creatorUrl": "https://attheinnerself.substack.com/",
+      "creatorAvatar": "",
+      "title": "Become the ideal version of yourself.",
+      "cover": "",
+      "link": "https://attheinnerself.substack.com/p/become-the-ideal-version-of-yourself",
+      "publishedAt": "2026-06-07T14:38:06.075Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "navalsarchive",
+      "creatorUrl": "https://navalsarchive.substack.com/",
+      "creatorAvatar": "",
+      "title": "Play long-term games with long-term people",
+      "cover": "",
+      "link": "https://navalsarchive.substack.com/p/play-long-term-games-with-long-term",
+      "publishedAt": "2026-06-07T14:38:01.705Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "ayushithakkar",
+      "creatorUrl": "https://ayushithakkar.substack.com/",
+      "creatorAvatar": "",
+      "title": "home organisation tips for adhd-brains",
+      "cover": "",
+      "link": "https://ayushithakkar.substack.com/p/home-organisation-tips-for-adhd-brains",
+      "publishedAt": "2026-06-07T14:37:54.981Z"
+    },
     {
       "platform": "youtube",
       "creator": "Helena Woods",
@@ -49,7 +89,7 @@
       "title": "How To Write Long Form (Essays, Newsletters, Articles, YouTube Scripts etc.)",
       "cover": "https://substack-post-media.s3.amazonaws.com/public/images/45b18369-6e30-4982-bead-1b60520bf921_8435x4460.png",
       "link": "https://ideas.profoundideas.com/p/how-to-write-long-form-essays-newsletters",
-      "publishedAt": "2026-06-04T06:31:28.000Z"
+      "publishedAt": "2026-06-04T06:31:28.856Z"
     },
     {
       "platform": "youtube",
@@ -69,7 +109,7 @@
       "title": "How to turn your love for learning into a one-person business",
       "cover": "https://substack-post-media.s3.amazonaws.com/public/images/5433cb84-5cdb-40ca-9fa9-f4ac9604c325_1920x1080.jpeg",
       "link": "https://letters.thedankoe.com/p/how-to-turn-your-love-for-learning",
-      "publishedAt": "2026-06-02T14:31:35.000Z"
+      "publishedAt": "2026-06-02T14:31:35.010Z"
     },
     {
       "platform": "bilibili",
@@ -79,7 +119,8 @@
       "title": "当表达成为话语权，我就是风暴本身| 32min超长",
       "cover": "https://i1.hdslb.com/bfs/archive/d2101b24df279ef7db74382aa6f7cf836a68bd38.jpg",
       "link": "https://www.bilibili.com/video/BV1XvVp69EvC",
-      "publishedAt": "2026-05-28T09:40:12.000Z"
+      "publishedAt": "2026-05-28T09:40:12.000Z",
+      "stale": true
     },
     {
       "platform": "bilibili",
@@ -89,7 +130,8 @@
       "title": "标题真正能供养生命的，是你的富贵念头。",
       "cover": "https://i0.hdslb.com/bfs/archive/e5d8187e92ab20d16f659c1a282dbdb03ebb31d3.jpg",
       "link": "https://www.bilibili.com/video/BV1bqLg6QE5d",
-      "publishedAt": "2026-05-16T08:26:48.000Z"
+      "publishedAt": "2026-05-16T08:26:48.000Z",
+      "stale": true
     }
   ]
 }
