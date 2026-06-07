@@ -73,12 +73,19 @@ async function primeCookieJar() {
 
   // Login cookies (provided via env / GitHub Secret). SESSDATA alone is enough
   // for read-only endpoints; bili_jct is needed for write actions (we don't do any).
-  const sessdata = process.env.BILI_SESSDATA
+  // Trim and strip stray quotes — GitHub Secrets sometimes get pasted with surrounding spaces / newlines.
+  const rawSessdata = process.env.BILI_SESSDATA || ''
+  const sessdata = rawSessdata.trim().replace(/^["']|["']$/g, '')
+
+  // Diagnostic (length only, never the value itself) so we can tell from CI logs
+  // whether the env var is reaching the script at all.
+  console.log(`  (BILI_SESSDATA env: raw_len=${rawSessdata.length} trimmed_len=${sessdata.length})`)
+
   if (sessdata) {
     jar.set('SESSDATA', sessdata)
-    if (process.env.BILI_BILI_JCT) jar.set('bili_jct', process.env.BILI_BILI_JCT)
-    if (process.env.BILI_BUVID3) jar.set('buvid3', process.env.BILI_BUVID3)
-    if (process.env.BILI_DEDEUSERID) jar.set('DedeUserID', process.env.BILI_DEDEUSERID)
+    if (process.env.BILI_BILI_JCT) jar.set('bili_jct', process.env.BILI_BILI_JCT.trim())
+    if (process.env.BILI_BUVID3)   jar.set('buvid3', process.env.BILI_BUVID3.trim())
+    if (process.env.BILI_DEDEUSERID) jar.set('DedeUserID', process.env.BILI_DEDEUSERID.trim())
     console.log('  (using logged-in SESSDATA from env)')
   }
 
@@ -164,7 +171,12 @@ async function strategyDynamic(uid, cookieJar) {
 // ──────────────────────────── strategy C: RSSHub ────────────────────────────
 
 async function strategyRsshub(uid) {
-  const hosts = ['https://rsshub.app', 'https://rsshub.rssforever.com']
+  const hosts = [
+    'https://rsshub.app',
+    'https://rsshub.rssforever.com',
+    'https://rss.shab.fun',
+    'https://rsshub.pseudoyu.com',
+  ]
   let lastErr
   for (const host of hosts) {
     try {
@@ -255,8 +267,8 @@ export async function fetchBilibiliLatest(subs) {
       link: video.link,
       publishedAt: video.publishedAt,
     })
-    // tiny politeness delay
-    await new Promise(r => setTimeout(r, 300))
+    // longer politeness delay between UPs — B站 throttles bursts even with login cookie
+    await new Promise(r => setTimeout(r, 1500))
   }
   return out
 }
