@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T10:10:14.250Z",
+  "updatedAt": "2026-06-07T10:36:08.846Z",
   "items": [
     {
       "platform": "bilibili",
@@ -19,7 +19,8 @@
       "title": "当表达成为话语权，我就是风暴本身| 32min超长",
       "cover": "https://i1.hdslb.com/bfs/archive/d2101b24df279ef7db74382aa6f7cf836a68bd38.jpg",
       "link": "https://www.bilibili.com/video/BV1XvVp69EvC",
-      "publishedAt": "2026-05-28T09:40:12.000Z"
+      "publishedAt": "2026-05-28T09:40:12.000Z",
+      "stale": true
     }
   ]
 }
