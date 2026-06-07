@@ -211,14 +211,36 @@ async function strategyRsshub(uid) {
 // ──────────────────────────── creator profile (avatar) ────────────────────────────
 
 async function fetchCreatorMeta(uid, cookieJar) {
-  // First try the official profile endpoint (often blocked → -352).
-  try {
-    const json = await fetchJson(`https://api.bilibili.com/x/space/wbi/acc/info?mid=${uid}`, { cookieJar })
-    if (json.code === 0 && json.data?.face) {
-      return { avatar: normalizeCover(json.data.face), name: json.data.name }
+  // Try several endpoints — each has different risk-control behavior, and any
+  // one returning the `face` URL is enough for us.
+  const endpoints = [
+    // WBI-signed account info (most accurate but often blocked → -352).
+    `https://api.bilibili.com/x/space/wbi/acc/info?mid=${uid}`,
+    // Old un-WBI account info (sometimes still works).
+    `https://api.bilibili.com/x/space/acc/info?mid=${uid}`,
+    // The new space-header endpoint (different code path on B站's side).
+    `https://api.bilibili.com/x/space/v2/header?mid=${uid}`,
+    // Bangumi/relation card — also exposes face for any UID.
+    `https://api.bilibili.com/x/web-interface/card?mid=${uid}&photo=false`,
+  ]
+  for (const url of endpoints) {
+    try {
+      const json = await fetchJson(url, {
+        cookieJar,
+        headers: { Referer: `https://space.bilibili.com/${uid}` },
+      })
+      if (json.code !== 0) continue
+      // Endpoints store face under slightly different paths:
+      //   acc/info: data.face, data.name
+      //   v2/header: data.info.face / data.face
+      //   card:      data.card.face / data.card.name
+      const d = json.data || {}
+      const face = d.face || d.info?.face || d.card?.face
+      const name = d.name || d.info?.name || d.card?.name
+      if (face) return { avatar: normalizeCover(face), name: name || '' }
+    } catch {
+      /* try next */
     }
-  } catch {
-    /* swallow */
   }
   return { avatar: '', name: '' }
 }
