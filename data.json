@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T14:09:40.871Z",
+  "updatedAt": "2026-06-07T14:17:55.577Z",
   "items": [
     {
       "platform": "bilibili",
@@ -9,7 +9,8 @@
       "title": "崩老头、公狗剧场、situationship：你看不懂的现象，背后是一个时代",
       "cover": "https://i2.hdslb.com/bfs/archive/091638071c50529a077e59bc34a0e01e85d0dd21.jpg",
       "link": "https://www.bilibili.com/video/BV1fGE469ERY",
-      "publishedAt": "2026-06-07T08:38:16.000Z"
+      "publishedAt": "2026-06-07T08:38:16.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
@@ -90,8 +91,7 @@
       "title": "标题真正能供养生命的，是你的富贵念头。",
       "cover": "https://i0.hdslb.com/bfs/archive/e5d8187e92ab20d16f659c1a282dbdb03ebb31d3.jpg",
       "link": "https://www.bilibili.com/video/BV1bqLg6QE5d",
-      "publishedAt": "2026-05-16T08:26:49.000Z",
-      "stale": true
+      "publishedAt": "2026-05-16T08:26:48.000Z"
     }
   ]
 }
