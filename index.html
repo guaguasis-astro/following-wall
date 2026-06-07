@@ -232,14 +232,9 @@
     const coverWrap = item.link
       ? `<a class="cover-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener">${cover}</a>`
       : cover
-    const firstChar = (item.creator || '?').trim().charAt(0) || '?'
-    const avatar = item.creatorAvatar
-      ? `<img class="avatar" src="${escapeHtml(item.creatorAvatar)}" alt="" referrerpolicy="no-referrer"
-            onerror="this.outerHTML='<span class=&quot;avatar-fallback platform-${escapeHtml(platform)}&quot;>${escapeHtml(firstChar)}</span>'" />`
-      : `<span class="avatar-fallback platform-${escapeHtml(platform)}">${escapeHtml(firstChar)}</span>`
     const creatorLink = item.creatorUrl
-      ? `<a class="creator-link" href="${escapeHtml(item.creatorUrl)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;">${avatar}<span class="creator-name">${escapeHtml(item.creator)}</span></a>`
-      : `<span style="display:inline-flex;align-items:center;gap:6px;">${avatar}<span class="creator-name">${escapeHtml(item.creator)}</span></span>`
+      ? `<a class="creator-link" href="${escapeHtml(item.creatorUrl)}" target="_blank" rel="noopener"><span class="creator-name">${escapeHtml(item.creator)}</span></a>`
+      : `<span class="creator-name">${escapeHtml(item.creator)}</span>`
 
     return `
       <article class="card${item.cover ? '' : ' no-cover'}">
