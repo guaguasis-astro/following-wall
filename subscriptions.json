@@ -5,6 +5,17 @@
     { "name": "花大钱", "uid": "384292139" },
     { "name": "这个月", "uid": "173986740" }
   ],
-  "youtube": [],
-  "substack": []
+  "youtube": [
+    { "name": "占星播客",    "channelId": "UCjeqviBoLp-rsvPaelT8b5Q" },
+    { "name": "Helena Woods", "channelId": "UCnf8AdU4Qu5qgMFBno0oRJA" },
+    { "name": "开普勒",       "channelId": "UCf_It-NZmKmbi8CXNR7QDYA" }
+  ],
+  "substack": [
+    { "name": "ayushithakkar",  "feedUrl": "https://ayushithakkar.substack.com/feed" },
+    { "name": "profoundideas",  "feedUrl": "https://ideas.profoundideas.com/feed" },
+    { "name": "navalsarchive",  "feedUrl": "https://navalsarchive.substack.com/feed" },
+    { "name": "attheinnerself", "feedUrl": "https://attheinnerself.substack.com/feed" },
+    { "name": "hussainibarra",  "feedUrl": "https://hussainibarra.substack.com/feed" },
+    { "name": "thedankoe",      "feedUrl": "https://letters.thedankoe.com/feed" }
+  ]
 }
