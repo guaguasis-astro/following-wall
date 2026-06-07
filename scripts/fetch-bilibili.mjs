@@ -63,11 +63,25 @@ async function fetchText(url, opts = {}) {
 }
 
 // Hit the home page once so we get a Buvid3 cookie issued, used by both A and B.
+// If env BILI_SESSDATA is provided, we attach it so requests look like a logged-in
+// user — this is the only reliable way to bypass datacenter-IP risk control.
 async function primeCookieJar() {
   const jar = new Map()
   // Synthetic Buvid3 is also acceptable to most endpoints; do both for safety.
   jar.set('buvid3', crypto.randomUUID().toUpperCase() + 'infoc')
   jar.set('b_nut', String(Math.floor(Date.now() / 1000)))
+
+  // Login cookies (provided via env / GitHub Secret). SESSDATA alone is enough
+  // for read-only endpoints; bili_jct is needed for write actions (we don't do any).
+  const sessdata = process.env.BILI_SESSDATA
+  if (sessdata) {
+    jar.set('SESSDATA', sessdata)
+    if (process.env.BILI_BILI_JCT) jar.set('bili_jct', process.env.BILI_BILI_JCT)
+    if (process.env.BILI_BUVID3) jar.set('buvid3', process.env.BILI_BUVID3)
+    if (process.env.BILI_DEDEUSERID) jar.set('DedeUserID', process.env.BILI_DEDEUSERID)
+    console.log('  (using logged-in SESSDATA from env)')
+  }
+
   try {
     await fetchJson('https://api.bilibili.com/x/web-interface/nav', { cookieJar: jar })
   } catch {

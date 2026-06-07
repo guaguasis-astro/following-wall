@@ -19,6 +19,12 @@ jobs:
           node-version: '20'
 
       - name: Fetch latest feeds
+        env:
+          # B站 cookie 来自瓜瓜浏览器, 让请求像登录用户, 绕过数据中心 IP 风控
+          BILI_SESSDATA:    ${{ secrets.BILI_SESSDATA }}
+          BILI_BILI_JCT:    ${{ secrets.BILI_BILI_JCT }}
+          BILI_BUVID3:      ${{ secrets.BILI_BUVID3 }}
+          BILI_DEDEUSERID:  ${{ secrets.BILI_DEDEUSERID }}
         run: node scripts/fetch-all.mjs
 
       - name: Commit data.json if changed
