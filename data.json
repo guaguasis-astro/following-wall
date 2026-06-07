@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-07T11:29:26.523Z",
+  "updatedAt": "2026-06-07T11:31:21.179Z",
   "items": [
     {
       "platform": "bilibili",
@@ -29,7 +29,18 @@
       "title": "当表达成为话语权，我就是风暴本身| 32min超长",
       "cover": "https://i1.hdslb.com/bfs/archive/d2101b24df279ef7db74382aa6f7cf836a68bd38.jpg",
       "link": "https://www.bilibili.com/video/BV1XvVp69EvC",
-      "publishedAt": "2026-05-28T09:40:12.000Z"
+      "publishedAt": "2026-05-28T09:40:12.000Z",
+      "stale": true
+    },
+    {
+      "platform": "bilibili",
+      "creator": "花大钱",
+      "creatorUrl": "https://space.bilibili.com/384292139",
+      "creatorAvatar": "",
+      "title": "标题真正能供养生命的，是你的富贵念头。",
+      "cover": "https://i0.hdslb.com/bfs/archive/e5d8187e92ab20d16f659c1a282dbdb03ebb31d3.jpg",
+      "link": "https://www.bilibili.com/video/BV1bqLg6QE5d",
+      "publishedAt": "2026-05-16T08:26:48.000Z"
     }
   ]
 }
