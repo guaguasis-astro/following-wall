@@ -147,11 +147,18 @@ async function strategyJina(feedUrl) {
     summary = '最新文章'
   }
 
+  // Clean up Markdown in summary: remove [text](url) links, brackets, etc.
+  let cleanSummary = summary
+  cleanSummary = cleanSummary.replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1') // remove [text](url)
+  cleanSummary = cleanSummary.replace(/\[([^\]]+)\]/g, '$1') // remove standalone [brackets]
+  cleanSummary = cleanSummary.replace(/\*\*/g, '') // remove bold
+  cleanSummary = cleanSummary.replace(/\*/g, '') // remove italics
+
   // No cover = pure text card is fine ✍️
   return {
     title,
     cover: '',
-    summary,
+    summary: cleanSummary,
     link,
     publishedAt: new Date().toISOString(), // unknown — best-effort, will show 'just now'
     creatorUrl: deriveCreatorUrl(feedUrl),
