@@ -133,13 +133,19 @@ async function strategyJina(feedUrl) {
       const m = line.match(/\[([^\]]+)\]\((https?:\/\/[^\s)]+\/p\/[^\s)]+)\)/)
       if (m) { title = m[1].trim(); link = m[2]; titleFound = true; continue }
     }
-    if (titleFound && line.length > 20 && !line.startsWith('http')) {
-      // Found the first non-empty, non-URL line after title = that's our summary
-      summary = line
-      break
+    if (titleFound && line.length > 0 && !line.startsWith('http') && !line.startsWith('[http')) {
+      // Accumulate lines until we hit a blank line or another link line
+      if (summary.length > 0) summary += ' '
+      summary += line
+      if (summary.length > 200) break
     }
   }
   if (!link) throw new Error('jina: no /p/ link in archive page')
+
+  // If no summary found, use a fallback summary
+  if (!summary || summary.trim() === '') {
+    summary = '最新文章'
+  }
 
   // No cover = pure text card is fine ✍️
   return {
