@@ -125,35 +125,26 @@ async function strategyJina(feedUrl) {
   // First post link looks like: [Some Title](https://foo.substack.com/p/slug)
   // We want the first one whose URL contains '/p/' (i.e., a real post, not nav).
   const lines = md.split('\n')
-  let title = '', link = ''
-  for (const line of lines) {
-    const m = line.match(/\[([^\]]+)\]\((https?:\/\/[^\s)]+\/p\/[^\s)]+)\)/)
-    if (m) { title = m[1].trim(); link = m[2]; break }
+  let title = '', link = '', summary = ''
+  let titleFound = false
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim()
+    if (!titleFound) {
+      const m = line.match(/\[([^\]]+)\]\((https?:\/\/[^\s)]+\/p\/[^\s)]+)\)/)
+      if (m) { title = m[1].trim(); link = m[2]; titleFound = true; continue }
+    }
+    if (titleFound && line.length > 20 && !line.startsWith('http')) {
+      // Found the first non-empty, non-URL line after title = that's our summary
+      summary = line
+      break
+    }
   }
   if (!link) throw new Error('jina: no /p/ link in archive page')
 
-  // Now fetch the single post page via Jina too to get og:image and og:description
-  let cover = '', summary = ''
-  try {
-    const postProxied = `https://r.jina.ai/${link}`
-    const postResp = await fetch(postProxied, {
-      headers: { 'User-Agent': UA, Accept: 'text/html' },
-    })
-    if (postResp.ok) {
-      const postHtml = await postResp.text()
-      // Jina returns plain text, but it preserves raw HTML meta tags? Let's check:
-      const ogImageMatch = postHtml.match(/<meta[^>]*property="og:image"[^>]*content="([^"]+)"/i)
-      const ogDescMatch = postHtml.match(/<meta[^>]*property="og:description"[^>]*content="([^"]+)"/i)
-      if (ogImageMatch) cover = ogImageMatch[1].trim()
-      if (ogDescMatch) summary = ogDescMatch[1].trim()
-    }
-  } catch {
-    // Best-effort, don't fail the whole strategy if this step fails
-  }
-
+  // No cover = pure text card is fine ✍️
   return {
     title,
-    cover,
+    cover: '',
     summary,
     link,
     publishedAt: new Date().toISOString(), // unknown — best-effort, will show 'just now'
