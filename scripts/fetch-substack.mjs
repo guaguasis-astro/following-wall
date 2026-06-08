@@ -58,9 +58,11 @@ async function strategyApi(feedUrl) {
   const arr = await resp.json()
   if (!Array.isArray(arr) || !arr.length) throw new Error('api: empty response')
   const p = arr[0]
+  const summary = p.subtitle || ''
   return {
     title: p.title || '(无标题)',
     cover: p.cover_image || '',
+    summary,
     link: p.canonical_url || `${origin}/p/${p.slug}`,
     publishedAt: p.post_date ? new Date(p.post_date).toISOString() : new Date().toISOString(),
     creatorUrl: deriveCreatorUrl(feedUrl),
@@ -88,11 +90,15 @@ async function strategyRss(feedUrl) {
   const link = pick(item, 'link')
   const pubDate = pick(item, 'pubDate')
   const content = pick(item, 'content:encoded') || pick(item, 'description')
+  let summary = pick(item, 'description') || ''
+  // Strip HTML tags from description to get plain text summary
+  summary = summary.replace(/<[^>]+>/g, '').trim()
   const enclosureUrl = (item.match(/<enclosure[^>]*url="([^"]+)"/) || [])[1] || ''
   const imgInContent = (content.match(/<img[^>]+src="([^"]+)"/i) || [])[1] || ''
   return {
     title,
     cover: enclosureUrl || imgInContent,
+    summary,
     link,
     publishedAt: pubDate ? new Date(pubDate).toISOString() : new Date().toISOString(),
     creatorUrl: deriveCreatorUrl(feedUrl),
@@ -125,9 +131,30 @@ async function strategyJina(feedUrl) {
     if (m) { title = m[1].trim(); link = m[2]; break }
   }
   if (!link) throw new Error('jina: no /p/ link in archive page')
+
+  // Now fetch the single post page via Jina too to get og:image and og:description
+  let cover = '', summary = ''
+  try {
+    const postProxied = `https://r.jina.ai/${link}`
+    const postResp = await fetch(postProxied, {
+      headers: { 'User-Agent': UA, Accept: 'text/html' },
+    })
+    if (postResp.ok) {
+      const postHtml = await postResp.text()
+      // Jina returns plain text, but it preserves raw HTML meta tags? Let's check:
+      const ogImageMatch = postHtml.match(/<meta[^>]*property="og:image"[^>]*content="([^"]+)"/i)
+      const ogDescMatch = postHtml.match(/<meta[^>]*property="og:description"[^>]*content="([^"]+)"/i)
+      if (ogImageMatch) cover = ogImageMatch[1].trim()
+      if (ogDescMatch) summary = ogDescMatch[1].trim()
+    }
+  } catch {
+    // Best-effort, don't fail the whole strategy if this step fails
+  }
+
   return {
     title,
-    cover: '',
+    cover,
+    summary,
     link,
     publishedAt: new Date().toISOString(), // unknown — best-effort, will show 'just now'
     creatorUrl: deriveCreatorUrl(feedUrl),
@@ -166,6 +193,7 @@ export async function fetchSubstackLatest(subs) {
       creatorAvatar: '',
       title: post.title,
       cover: post.cover,
+      summary: post.summary,
       link: post.link,
       publishedAt: post.publishedAt,
     })

@@ -33,6 +33,8 @@ function parseFirstEntry(xml, channelId) {
   const title   = pick(entry, /<title>([\s\S]*?)<\/title>/).trim()
   const link    = pick(entry, /<link[^>]*href="([^"]+)"/)
   const published = pick(entry, /<published>([\s\S]*?)<\/published>/)
+  let summary = pick(entry, /<media:description>([\s\S]*?)<\/media:description>/) || ''
+  summary = summary.trim()
   // media:thumbnail is self-closing inside media:group
   const cover = pick(entry, /<media:thumbnail[^>]*url="([^"]+)"/)
 
@@ -41,6 +43,7 @@ function parseFirstEntry(xml, channelId) {
   return {
     title,
     cover,
+    summary,
     link: link || `https://www.youtube.com/watch?v=${videoId}`,
     publishedAt: published ? new Date(published).toISOString() : new Date().toISOString(),
     creatorName: author, // canonical channel name from feed, in case subs.name was a nickname
@@ -63,6 +66,7 @@ export async function fetchYoutubeLatest(subs) {
         creatorAvatar: '',
         title: v.title,
         cover: v.cover,
+        summary: v.summary,
         link: v.link,
         publishedAt: v.publishedAt,
       })

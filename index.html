@@ -100,6 +100,41 @@
     color: #b8a98a; font-size: 13px;
   }
 
+  /* Pure-text card: when no cover AND we have a summary */
+  .card.text-only .cover-placeholder {
+    display: none;
+  }
+  .card.text-only .cover-link {
+    display: none;
+  }
+  .card.text-only .body {
+    padding: 14px 16px 16px;
+  }
+  .card.text-only .title {
+    -webkit-line-clamp: 3;
+    font-size: 15px;
+    margin: 0 0 10px;
+  }
+  .card-text-summary {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 0 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .text-only-decoration {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 16px;
+    line-height: 1;
+    filter: grayscale(20%);
+    opacity: 0.7;
+  }
+
   .body { padding: 10px 12px 12px; }
   .title {
     font-size: 14px;
@@ -225,6 +260,7 @@
   function renderCard(item) {
     const platform = item.platform || ''
     const label = PLATFORM_LABEL[platform] || platform
+    const isTextOnly = !item.cover && item.summary && item.summary.trim() !== ''
     const cover = item.cover
       ? `<img class="cover" loading="lazy" src="${escapeHtml(item.cover)}" alt="" referrerpolicy="no-referrer"
             onerror="this.parentElement.parentElement.classList.add('no-cover'); this.replaceWith(Object.assign(document.createElement('div'),{className:'cover-placeholder',textContent:'封面加载失败'}));" />`
@@ -236,13 +272,28 @@
       ? `<a class="creator-link" href="${escapeHtml(item.creatorUrl)}" target="_blank" rel="noopener"><span class="creator-name">${escapeHtml(item.creator)}</span></a>`
       : `<span class="creator-name">${escapeHtml(item.creator)}</span>`
 
+    let cardClasses = ''
+    if (isTextOnly) {
+      cardClasses = ' text-only'
+    } else if (!item.cover) {
+      cardClasses = ' no-cover'
+    }
+
+    // Truncate summary to ~120 chars if needed, add ...
+    let summary = item.summary || ''
+    if (summary.length > 110) {
+      summary = summary.slice(0, 107) + '...'
+    }
+
     return `
-      <article class="card${item.cover ? '' : ' no-cover'}">
+      <article class="card${cardClasses}">
         <span class="platform-badge ${platform}">${escapeHtml(label)}</span>
         ${item.stale ? '<span class="stale-tag">未更新</span>' : ''}
-        ${coverWrap}
+        ${isTextOnly ? '<span class="text-only-decoration">✍️</span>' : ''}
+        ${isTextOnly ? '' : coverWrap}
         <div class="body">
           <h3 class="title">${escapeHtml(item.title || '(无标题)')}</h3>
+          ${isTextOnly && summary ? `<div class="card-text-summary">${escapeHtml(summary)}</div>` : ''}
           <div class="meta">
             ${creatorLink}
             <span class="dot">·</span>
