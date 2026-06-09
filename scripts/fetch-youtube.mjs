@@ -2,9 +2,7 @@
 //
 // Fetch the latest video per YouTube channel via multiple strategies:
 // 1. The public Atom feed: https://www.youtube.com/feeds/videos.xml?channel_id={id}
-// 2. RSSHub fallback: https://rsshub.app/youtube/channel/{id}
-// 3. RSSHub fallback (user endpoint): https://rsshub.app/youtube/user/{id}
-// 4. More RSSHub hosts
+// 2. RSSHub fallback - multiple paths and hosts
 // No auth, no anti-bot, no key — Google publishes this for every channel.
 // Each <entry> includes media:thumbnail (cover) and published timestamp.
 
@@ -71,6 +69,7 @@ async function fetchViaRsshub(channelId) {
   const paths = [
     `/youtube/channel/${channelId}`,
     `/youtube/user/${channelId}`,
+    `/youtube/videos/${channelId}`,
   ]
   let lastErr
   for (const host of hosts) {
