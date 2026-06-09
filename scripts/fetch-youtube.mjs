@@ -1,8 +1,10 @@
 // scripts/fetch-youtube.mjs
 //
-// Fetch the latest video per YouTube channel via:
+// Fetch the latest video per YouTube channel via multiple strategies:
 // 1. The public Atom feed: https://www.youtube.com/feeds/videos.xml?channel_id={id}
 // 2. RSSHub fallback: https://rsshub.app/youtube/channel/{id}
+// 3. RSSHub fallback (user endpoint): https://rsshub.app/youtube/user/{id}
+// 4. More RSSHub hosts
 // No auth, no anti-bot, no key — Google publishes this for every channel.
 // Each <entry> includes media:thumbnail (cover) and published timestamp.
 
@@ -63,14 +65,22 @@ async function fetchViaRsshub(channelId) {
     'https://rsshub.rssforever.com',
     'https://rss.shab.fun',
     'https://rsshub.pseudoyu.com',
+    'https://rsshub.feeded.app',
+    'https://rsshub.henry.wang',
+  ]
+  const paths = [
+    `/youtube/channel/${channelId}`,
+    `/youtube/user/${channelId}`,
   ]
   let lastErr
   for (const host of hosts) {
-    try {
-      const xml = await fetchText(`${host}/youtube/channel/${channelId}`)
-      return parseFirstEntry(xml, channelId)
-    } catch (e) {
-      lastErr = e
+    for (const path of paths) {
+      try {
+        const xml = await fetchText(`${host}${path}`)
+        return parseFirstEntry(xml, channelId)
+      } catch (e) {
+        lastErr = e
+      }
     }
   }
   throw lastErr || new Error('youtube: all rsshub hosts failed')
@@ -110,7 +120,7 @@ export async function fetchYoutubeLatest(subs) {
       publishedAt: video.publishedAt,
     })
     // gentle delay; YouTube's feed endpoint is generous but no reason to hammer
-    await new Promise(r => setTimeout(r, 300))
+    await new Promise(r => setTimeout(r, 500))
   }
   return out
 }
