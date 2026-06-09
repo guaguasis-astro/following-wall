@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-09T04:17:51.272Z",
+  "updatedAt": "2026-06-09T04:24:59.020Z",
   "items": [
     {
       "platform": "substack",
@@ -10,7 +10,7 @@
       "cover": "",
       "summary": "How I gained 33,000 followers in 19 months (and how I'd do it again if I had to): May 31•Hussain Ibarra",
       "link": "https://hussainibarra.substack.com/p/how-to-finally-escape-beginners-hell",
-      "publishedAt": "2026-06-09T04:17:49.932Z"
+      "publishedAt": "2026-06-09T04:24:57.884Z"
     },
     {
       "platform": "substack",
@@ -21,7 +21,7 @@
       "cover": "",
       "summary": "Jan 8•Anthony Huerta !Image 1",
       "link": "https://attheinnerself.substack.com/p/become-the-ideal-version-of-yourself",
-      "publishedAt": "2026-06-09T04:17:48.984Z"
+      "publishedAt": "2026-06-09T04:24:56.983Z"
     },
     {
       "platform": "substack",
@@ -32,7 +32,7 @@
       "cover": "",
       "summary": "“Play long-term games with long-term people.” — Naval Ravikant Jun 3•Naval's Archive Seek wealth, not money or status",
       "link": "https://navalsarchive.substack.com/p/play-long-term-games-with-long-term",
-      "publishedAt": "2026-06-09T04:17:48.076Z"
+      "publishedAt": "2026-06-09T04:24:56.093Z"
     },
     {
       "platform": "substack",
@@ -43,7 +43,7 @@
       "cover": "",
       "summary": "home organisation advice often assumes a person has one stable personality, a generous amount of executive function, and a mysterious willingness to…",
       "link": "https://ayushithakkar.substack.com/p/home-organisation-tips-for-adhd-brains",
-      "publishedAt": "2026-06-09T04:17:46.218Z"
+      "publishedAt": "2026-06-09T04:24:54.540Z"
     },
     {
       "platform": "bilibili",
@@ -53,7 +53,8 @@
       "title": "简历改了20版没回应？因为你根本没在审题",
       "cover": "https://i2.hdslb.com/bfs/archive/4aa55381aa9590ac317a53941ec296b1938f7964.jpg",
       "link": "https://www.bilibili.com/video/BV1awEG6NEAP",
-      "publishedAt": "2026-06-08T14:59:31.000Z"
+      "publishedAt": "2026-06-08T14:59:31.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
