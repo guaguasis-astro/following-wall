@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-11T22:21:32.113Z",
+  "updatedAt": "2026-06-12T21:19:40.764Z",
   "items": [
     {
       "platform": "substack",
@@ -10,7 +10,7 @@
       "cover": "",
       "summary": "How I gained 33,000 followers in 19 months (and how I'd do it again if I had to): May 31•Hussain Ibarra",
       "link": "https://hussainibarra.substack.com/p/how-to-finally-escape-beginners-hell",
-      "publishedAt": "2026-06-11T22:21:30.886Z"
+      "publishedAt": "2026-06-12T21:19:39.611Z"
     },
     {
       "platform": "substack",
@@ -21,18 +21,18 @@
       "cover": "",
       "summary": "Jan 8•Anthony Huerta !Image 1",
       "link": "https://attheinnerself.substack.com/p/become-the-ideal-version-of-yourself",
-      "publishedAt": "2026-06-11T22:21:26.515Z"
+      "publishedAt": "2026-06-12T21:19:34.046Z"
     },
     {
       "platform": "substack",
       "creator": "navalsarchive",
       "creatorUrl": "https://navalsarchive.substack.com/",
       "creatorAvatar": "",
-      "title": "Escape competition through authenticity",
+      "title": "Specific knowledge is found by following your curiosity",
       "cover": "",
-      "summary": "“Escape competition through authenticity.” — Naval Ravikant Jun 10•Naval's Archive",
-      "link": "https://navalsarchive.substack.com/p/escape-competition-through-authenticity",
-      "publishedAt": "2026-06-11T22:21:21.183Z"
+      "summary": "“Specific knowledge is found by pursuing your genuine curiosity… It can’t be taught, but it can be learned.” — Naval Ravikant",
+      "link": "https://navalsarchive.substack.com/p/specific-knowledge-is-found-by-following",
+      "publishedAt": "2026-06-12T21:19:27.552Z"
     },
     {
       "platform": "substack",
@@ -43,7 +43,7 @@
       "cover": "",
       "summary": "empathy burnout begins with a very flattering misunderstanding: because you can understand people, you assume you are supposed to keep making room for…",
       "link": "https://ayushithakkar.substack.com/p/the-anatomy-of-empathy-burnout",
-      "publishedAt": "2026-06-11T22:21:15.893Z"
+      "publishedAt": "2026-06-12T21:19:22.523Z"
     },
     {
       "platform": "youtube",
@@ -86,7 +86,8 @@
       "title": "迷茫、焦虑、内耗、敏感星人必听的一期！选择余华老师作为我的解药",
       "cover": "https://i1.hdslb.com/bfs/archive/992f85c9bcff5d4804df0efc7fa1a3cd72ba03d8.jpg",
       "link": "https://www.bilibili.com/video/BV17sEg6rEVH",
-      "publishedAt": "2026-06-08T10:39:59.000Z"
+      "publishedAt": "2026-06-08T10:39:59.000Z",
+      "stale": true
     },
     {
       "platform": "substack",
