@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-13T20:08:14.908Z",
+  "updatedAt": "2026-06-14T20:11:30.031Z",
   "items": [
     {
       "platform": "substack",
@@ -10,7 +10,7 @@
       "cover": "",
       "summary": "How I gained 33,000 followers in 19 months (and how I'd do it again if I had to): May 31•Hussain Ibarra",
       "link": "https://hussainibarra.substack.com/p/how-to-finally-escape-beginners-hell",
-      "publishedAt": "2026-06-13T20:08:13.756Z"
+      "publishedAt": "2026-06-14T20:11:28.702Z"
     },
     {
       "platform": "substack",
@@ -21,7 +21,7 @@
       "cover": "",
       "summary": "Jan 8•Anthony Huerta !Image 1",
       "link": "https://attheinnerself.substack.com/p/become-the-ideal-version-of-yourself",
-      "publishedAt": "2026-06-13T20:08:05.179Z"
+      "publishedAt": "2026-06-14T20:11:22.216Z"
     },
     {
       "platform": "substack",
@@ -32,7 +32,7 @@
       "cover": "",
       "summary": "“Specific knowledge is found by pursuing your genuine curiosity… It can’t be taught, but it can be learned.” — Naval Ravikant",
       "link": "https://navalsarchive.substack.com/p/specific-knowledge-is-found-by-following",
-      "publishedAt": "2026-06-13T20:07:52.680Z"
+      "publishedAt": "2026-06-14T20:11:16.379Z"
     },
     {
       "platform": "substack",
@@ -43,18 +43,29 @@
       "cover": "",
       "summary": "empathy burnout begins with a very flattering misunderstanding: because you can understand people, you assume you are supposed to keep making room for…",
       "link": "https://ayushithakkar.substack.com/p/the-anatomy-of-empathy-burnout",
-      "publishedAt": "2026-06-13T20:07:45.927Z"
+      "publishedAt": "2026-06-14T20:11:11.416Z"
     },
     {
       "platform": "youtube",
       "creator": "开普勒",
       "creatorUrl": "https://www.youtube.com/channel/UCf_It-NZmKmbi8CXNR7QDYA",
       "creatorAvatar": "",
-      "title": "Your Natal Chart Holds the Blueprint for Your Brand! #astrology #business #branding",
-      "cover": "https://i3.ytimg.com/vi/nJi_OjmRPl8/hqdefault.jpg",
-      "summary": "Want to learn more? Join the class 'Branding: Attract the Right Clients with Astrology' by visiting: https://store.keplercollege.org/product/branding-attract-the-right-clients-with-astrology/\n\n#astrology #natalchart #business #branding \n\nInformation:\n\n'Your natal chart holds the blueprint for your brand. In this five-week course with astrologer and marketing strategist Lori Barnes, you will build a clear, compelling brand for your astrology business using the wisdom of your natal chart.\n\nThis course guides practicing astrologers through brand identity, audience development, messaging, and client experience. You will finish with a polished branding profile and a brand kit designed to attract the clients you are meant to serve.\n\nThis course requires Low Intermediate Astrological Knowledge.'",
-      "link": "https://www.youtube.com/shorts/nJi_OjmRPl8",
-      "publishedAt": "2026-06-13T16:00:23.000Z"
+      "title": "When Personal Planets Connect to the Outer Planets in Your Chart",
+      "cover": "https://i2.ytimg.com/vi/-fAnXdvO9D0/hqdefault.jpg",
+      "summary": "Would you like to learn how to create a natal chart by hand? If so, join out chart calculation class here: https://store.keplercollege.org/product/chart-calculation-4/\n\n#astrology #uranus #neptune #pluto",
+      "link": "https://www.youtube.com/shorts/-fAnXdvO9D0",
+      "publishedAt": "2026-06-14T16:00:37.000Z"
+    },
+    {
+      "platform": "youtube",
+      "creator": "占星播客",
+      "creatorUrl": "https://www.youtube.com/channel/UCjeqviBoLp-rsvPaelT8b5Q",
+      "creatorAvatar": "",
+      "title": "Thema Mundi: How the Planets Came to Rule Two Zodiac Signs",
+      "cover": "https://i1.ytimg.com/vi/TwwNcn0O1Dc/hqdefault.jpg",
+      "summary": "This is an animation of an ancient Persian myth about how the traditional planets came to rule two signs of the zodiac in astrology. \n\nThe narration and script with some embellishments on the original story are by Chris Brennan, and the animation was done by Jack Cusumano.\n\nThe original myth is preserved in Codices Vaticani 15, fol. 229, edited in CCAG 5, pt. 2 pp. 130-37 by I. Bidez, privately translated by Demetra George.",
+      "link": "https://www.youtube.com/watch?v=TwwNcn0O1Dc",
+      "publishedAt": "2026-06-14T02:24:46.000Z"
     },
     {
       "platform": "bilibili",
@@ -64,7 +75,8 @@
       "title": "时代发展下旧职业消失，新行业就会不断涌现",
       "cover": "https://i2.hdslb.com/bfs/archive/c284940017fec93487a8eb5c77a49675c5ad7d30.jpg",
       "link": "https://www.bilibili.com/video/BV1EeJn6uEPm",
-      "publishedAt": "2026-06-13T10:14:28.000Z"
+      "publishedAt": "2026-06-13T10:14:28.000Z",
+      "stale": true
     },
     {
       "platform": "bilibili",
@@ -74,7 +86,8 @@
       "title": "好人认栽，因为没读它。",
       "cover": "https://i0.hdslb.com/bfs/archive/083de0dcab1f340017d7003d271da34aa1887845.jpg",
       "link": "https://www.bilibili.com/video/BV1vYJE6wEQm",
-      "publishedAt": "2026-06-13T06:52:46.000Z"
+      "publishedAt": "2026-06-13T06:52:46.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
@@ -110,17 +123,6 @@
       "stale": true
     },
     {
-      "platform": "youtube",
-      "creator": "占星播客",
-      "creatorUrl": "https://www.youtube.com/channel/UCjeqviBoLp-rsvPaelT8b5Q",
-      "creatorAvatar": "",
-      "title": "June Astrology Forecast 2026",
-      "cover": "https://i3.ytimg.com/vi/ZJyrm_k3CNg/hqdefault.jpg",
-      "summary": "A deep dive into the astrology forecast for June 2026, with astrologers Chris Brennan and Leisa Schaim.\n\nWe spend the first hour talking about the astrology behind news and events that happened since our last forecast, and then in the second hour we get into the astrology of June.\n\nThe month opens with one of the most auspicious planetary alignments of the year: a Venus-Jupiter conjunction in Cancer that remains active for the first two weeks. Venus-Jupiter conjunctions are excellent for relationships, marriages, and partnerships, as well as peacekeeping efforts and the confirmation of good things.\n\nIn the middle of the month, there is a distinct tone shift when Venus enters Leo and begins opposing Pluto. This aspect can bring up issues related to power, manipulation, and control within the context of partnerships and relationships. At the same time, Mercury enters its shadow period, slowing down and preparing to station retrograde, while Mars moves within a 10-degree orb of a volatile conjunction with Uranus.\n\nThe latter part of the month takes an unexpected and explosive turn, especially once Mars officially enters Gemini and the conjunction with Uranus tightens. On the final day of the month, Jupiter enters Leo, beginning a one-year transit through that sign. However, this transit starts with an opposition to Pluto that will culminate in July, highlighting themes involving the manipulation of truth and attempts to control knowledge.\n\nSimultaneously, Mercury stations retrograde just before it can reach a conjunction with Jupiter, effectively revoking and delaying a beneficent alignment just as the much more malefic Mars-Uranus configuration is forming.\n\nThis is episode 538 of The Astrology Podcast.\n\nLA Astro Fest\n\nhttps://laastrofest.com\n\nAstrocartography Petitions\n\nhttps://www.astrologicalassociation.com/astrocartography-petition/\n\nhttps://www.change.org/p/protégeons-l-astrocartographie\n\nLeisa’s Website\n\nhttps://www.leisaschaim.com\n\n2026 Electional Astrology Report\n\nhttps://theastrologypodcast.com/2026report/\n\nTimestamps\n\n00:00:00 Introduction\n00:00:38 Quick Overview of June\n00:02:45 News Segment Begins\n00:04:01 Iran War\n00:12:02 Explosions Around Mars Aspects\n00:19:08 Hantavirus and Ebola Outbreaks\n00:27:53 Pope Issues AI Encyclical\n00:37:01 Saturn-Neptune Anti-Astrology Signature\n00:41:52 Trump Visits China\n00:49:00 Cuba\n00:54:01 Supreme Court Decision on Voting Rights Act\n01:01:32 Astrocartography Trademarking Controversy\n01:15:12 LA Astro Fest\n01:16:35 June Forecast Begins\n01:20:25 Mercury-Neptune Square (June 3)\n01:24:45 Mercury-Saturn Square\n01:27:56 The Venus-Jupiter Conjunction (June 9)\n01:41:31 Auspicious Electional Chart for June\n01:46:24 The World Cup &amp; June Bright Spots\n01:50:10 Gemini New Moon &amp; Mid-Month Vibe Shift\n01:54:41 Venus-Pluto Opposition (June 17)\n02:00:53 Sun Enters Cancer &amp; Summer Solstice\n02:02:53 Late June Volatility &amp; Mars-Uranus Conjunction\n02:04:56 Medieval Astrological Technique of &quot;Revoking&quot;\n02:06:48 Mars-Uranus in Gemini &amp; US History\n02:21:40 Personalizing the Mars-Uranus Transit\n02:24:44 Story Time: Chris Brennan's Spicy Pepper Incident\n02:29:53 Jupiter Ingress into Leo (June 30)\n02:39:54 Final Wrap-up &amp; Promo Outros\n02:43:07 End Cards",
-      "link": "https://www.youtube.com/watch?v=ZJyrm_k3CNg",
-      "publishedAt": "2026-06-02T22:00:50.000Z"
-    },
-    {
       "platform": "substack",
       "creator": "thedankoe",
       "creatorUrl": "https://letters.thedankoe.com/",
@@ -139,7 +141,8 @@
       "title": "标题真正能供养生命的，是你的富贵念头。",
       "cover": "https://i0.hdslb.com/bfs/archive/e5d8187e92ab20d16f659c1a282dbdb03ebb31d3.jpg",
       "link": "https://www.bilibili.com/video/BV1bqLg6QE5d",
-      "publishedAt": "2026-05-16T08:26:48.000Z"
+      "publishedAt": "2026-05-16T08:26:48.000Z",
+      "stale": true
     }
   ]
 }
