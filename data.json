@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T20:19:28.813Z",
+  "updatedAt": "2026-06-22T01:55:15.947Z",
   "items": [
     {
       "platform": "youtube",
@@ -28,11 +28,10 @@
       "creator": "像素范",
       "creatorUrl": "https://space.bilibili.com/15741969",
       "creatorAvatar": "",
-      "title": "置身钉内，组织臃肿的弊病和被驯化的大厂员工。",
-      "cover": "https://i2.hdslb.com/bfs/archive/9fb18020e2e694c65f3bd74d837d5009148b4bb2.jpg",
-      "link": "https://www.bilibili.com/video/BV1dJjv6PEV5",
-      "publishedAt": "2026-06-19T02:53:06.000Z",
-      "stale": true
+      "title": "闲鱼，一个出人意料的“机会市场”",
+      "cover": "https://i1.hdslb.com/bfs/archive/06f4838ab4e356070e05f22ae9586ea3e9a9cbee.jpg",
+      "link": "https://www.bilibili.com/video/BV1MJj46AEtw",
+      "publishedAt": "2026-06-21T03:16:45.000Z"
     },
     {
       "platform": "substack",
@@ -145,8 +144,7 @@
       "title": "标题真正能供养生命的，是你的富贵念头。",
       "cover": "https://i0.hdslb.com/bfs/archive/e5d8187e92ab20d16f659c1a282dbdb03ebb31d3.jpg",
       "link": "https://www.bilibili.com/video/BV1bqLg6QE5d",
-      "publishedAt": "2026-05-16T08:26:48.000Z",
-      "stale": true
+      "publishedAt": "2026-05-16T08:26:48.000Z"
     }
   ]
 }
