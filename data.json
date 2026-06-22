@@ -1,6 +1,17 @@
 {
-  "updatedAt": "2026-06-22T01:55:15.947Z",
+  "updatedAt": "2026-06-22T22:19:27.755Z",
   "items": [
+    {
+      "platform": "youtube",
+      "creator": "开普勒",
+      "creatorUrl": "https://www.youtube.com/channel/UCf_It-NZmKmbi8CXNR7QDYA",
+      "creatorAvatar": "",
+      "title": "Timing with Planetary Periods",
+      "cover": "https://i1.ytimg.com/vi/p51MW_LLjrw/hqdefault.jpg",
+      "summary": "The planets' cycles are foundational building blocks to many astrological techniques and their fingerprints are found in some of the most popular methods for timing events.\n\nThe 2nd century astrologer Vettius Valens described a timing technique that uses a planet's synodic recurrence cycle, usually known as the minor or lesser years of a planet, to time a planet's activation.\n\nUnderstanding these encoded cycles reveals a cornerstone for when to expect the seeds of the natal promise to come to fruition in one's life. Using Book VII of Valens' Anthology as our guide, we will shed light on this technique, learn how to apply it using chart examples, and consider the cyclic and fractal nature of time.\n\nTo join the class 'Planetary Periods and Ascensional Times: Valens’ Timing Technique', starting August 1, visit: https://store.keplercollege.org/product/planetary-periods-and-ascensional-times-valens-timing-technique/\n\nLearn more about our Hellenistic Timing Techniques Certificate here: https://www.keplercollege.org/certificates/hellenistic-timing-techniques/\n\n#astrology #hellenisticastrology #keplercollege \n\nChapters:\n\n00:00 Introduction\n02:36 Introduction to Planetary Cycles: An overview of sidereal, tropical, and synodic periods.\n06:04 Minor, Mean, and Greater Years: Explanation of the different year categories and the Metonic cycle.\n11:12 Solar Phase Cycle: Breaking down the synodic cycle, including conjunctions, stations, and heliacal risings/settings.\n16:46 Natural Significations: A look at planetary significations and the influence of Stoic philosophy.\n22:41 Vettius Valens &amp; Book VII: Introduction to the 2nd-century astrologer Vettius Valens and his work.\n26:45 Timing Technique Details: How to apply planetary periods and ascensional times to time events.\n34:54 Case Study 1: Robert Frank: Applying Saturn's minor period to the life of photographer Robert Frank.\n40:20 Case Study 2: David Wojnarowicz: Applying Jupiter's minor period to the artist David Wojnarowicz.\n45:19 Universal Timing &amp; Fractals: Discussion on the nature of timing lords, fractals, and the arrow of time.\n59:09 Q&amp;A Session\n1:15:00 Conclusion\n\n\nRecorded June 2026\n\nOpinion Disclaimer: All views expressed by the host and the guest(s) are solely theirs and may not reflect the views of Kepler College. Please keep your comments respectful. Thank you.",
+      "link": "https://www.youtube.com/watch?v=p51MW_LLjrw",
+      "publishedAt": "2026-06-22T16:45:16.000Z"
+    },
     {
       "platform": "youtube",
       "creator": "Helena Woods",
@@ -13,17 +24,6 @@
       "publishedAt": "2026-06-21T20:09:34.000Z"
     },
     {
-      "platform": "youtube",
-      "creator": "开普勒",
-      "creatorUrl": "https://www.youtube.com/channel/UCf_It-NZmKmbi8CXNR7QDYA",
-      "creatorAvatar": "",
-      "title": "Astrology of Health: Elements, Humors and Temperament",
-      "cover": "https://i4.ytimg.com/vi/_TCJX8tOghs/hqdefault.jpg",
-      "summary": "Join Dr. Masen Gaspervic in this short informative presentation on elements, humors and temperament. To join the class starting July 11, visit: https://store.keplercollege.org/product/elements-humors-temperaments-3/\n\nTo learn more about our astrology of healing certificate, visit: https://www.keplercollege.org/certificates/astrology-of-healing/\n\n#astrology #health #medicalastrology #keplercollege \n\nChapters: \n\n00:00 Introduction \n02:26 History of Humoral Theory (Hippocrates and Galen)\n03:42 Humors, Temperaments, and Health\n05:16 Defining the Four Temperaments (Physical and Behavioral)\n06:54 Modern Temperament Research (Carl Jung, Ivan Pavlov, Hans Selye)\n10:51 Assessing Individual Vulnerability\n12:54 Disease and the Impact of Non-Naturals\n13:45 Diagnosis and Treatment Strategies\n15:26 Case Study: Donald Trump (Choleric Temperament)\n17:03 Case Study: Bill Clinton (Balanced Temperament)\n18:17 Predictive Decumbiture Example (COVID Case)\n19:43 Summary of Four-Step Method and Conclusion\n20:20 Conclusion \n\nRecorded June 2026",
-      "link": "https://www.youtube.com/watch?v=_TCJX8tOghs",
-      "publishedAt": "2026-06-21T14:55:30.000Z"
-    },
-    {
       "platform": "bilibili",
       "creator": "像素范",
       "creatorUrl": "https://space.bilibili.com/15741969",
@@ -31,7 +31,8 @@
       "title": "闲鱼，一个出人意料的“机会市场”",
       "cover": "https://i1.hdslb.com/bfs/archive/06f4838ab4e356070e05f22ae9586ea3e9a9cbee.jpg",
       "link": "https://www.bilibili.com/video/BV1MJj46AEtw",
-      "publishedAt": "2026-06-21T03:16:45.000Z"
+      "publishedAt": "2026-06-21T03:16:45.000Z",
+      "stale": true
     },
     {
       "platform": "substack",
@@ -144,7 +145,8 @@
       "title": "标题真正能供养生命的，是你的富贵念头。",
       "cover": "https://i0.hdslb.com/bfs/archive/e5d8187e92ab20d16f659c1a282dbdb03ebb31d3.jpg",
       "link": "https://www.bilibili.com/video/BV1bqLg6QE5d",
-      "publishedAt": "2026-05-16T08:26:48.000Z"
+      "publishedAt": "2026-05-16T08:26:48.000Z",
+      "stale": true
     }
   ]
 }
