@@ -117,9 +117,7 @@ async function strategyJina(feedUrl) {
   const target = `${origin}/archive`
   // r.jina.ai is invoked by appending the target URL to its origin.
   const proxied = `https://r.jina.ai/${target}`
-  const resp = await fetch(proxied, {
-    headers: { 'User-Agent': UA, Accept: 'text/plain' },
-  })
+  const resp = await fetch(proxied) // No custom headers at all
   if (!resp.ok) throw new Error(`jina HTTP ${resp.status}`)
   const md = await resp.text()
   // First post link looks like: [Some Title](https://foo.substack.com/p/slug)

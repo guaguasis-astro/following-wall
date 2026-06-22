@@ -254,28 +254,36 @@ export async function fetchBilibiliLatest(subs) {
     const creatorUrl = `https://space.bilibili.com/${uid}`
     let video = null
     const errors = []
-    // CRITICAL: fresh cookie jar per UP. B站 412s after ~2-3 requests on the
-    // same session, regardless of inter-request delay. A new jar = new buvid3
-    // = new session in their eyes, even though SESSDATA still identifies us.
-    const jar = await primeCookieJar()
-    for (const [label, fn] of [
-      ['wbi', () => strategyWbi(uid, jar)],
-      ['dynamic', () => strategyDynamic(uid, jar)],
-      ['rsshub', () => strategyRsshub(uid)],
-    ]) {
-      try {
-        video = await fn()
-        console.log(`  ✓ ${name} via ${label}: ${video.title}`)
-        break
-      } catch (e) {
-        errors.push(`${label}: ${e.message}`)
+    let attempts = 0
+    while (!video && attempts < 2) {
+      attempts++
+      // CRITICAL: fresh cookie jar per UP (and per retry!). B站 412s after ~2-3 requests on the
+      // same session, regardless of inter-request delay. A new jar = new buvid3
+      // = new session in their eyes, even though SESSDATA still identifies us.
+      const jar = await primeCookieJar()
+      for (const [label, fn] of [
+        ['wbi', () => strategyWbi(uid, jar)],
+        ['dynamic', () => strategyDynamic(uid, jar)],
+        ['rsshub', () => strategyRsshub(uid)],
+      ]) {
+        try {
+          video = await fn()
+          console.log(`  ✓ ${name} via ${label}${attempts > 1 ? ' (after retry)' : ''}: ${video.title}`)
+          break
+        } catch (e) {
+          errors.push(`${label}: ${e.message}`)
+        }
+      }
+      if (!video && attempts === 1) {
+        console.warn(`  ✗ ${name} first attempt failed, waiting 60s and retrying...`)
+        await new Promise(r => setTimeout(r, 60000))
       }
     }
     if (!video) {
       console.warn(`  ✗ ${name} (uid=${uid}) — all strategies failed:\n    ${errors.join('\n    ')}`)
       continue
     }
-    const meta = await fetchCreatorMeta(uid, jar)
+    const meta = await fetchCreatorMeta(uid, null)
     out.push({
       platform: 'bilibili',
       creator: name,
