@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T17:16:15.146Z",
+  "updatedAt": "2026-07-02T16:52:48.438Z",
   "items": [
     {
       "platform": "substack",
@@ -10,7 +10,7 @@
       "cover": "",
       "summary": "I’ve gained a lot of new readers over the past few weeks. Jun 30•Hussain Ibarra !Image 1",
       "link": "https://hussainibarra.substack.com/p/my-story-who-the-fck-is-hussain-ibarra",
-      "publishedAt": "2026-07-01T17:16:13.964Z"
+      "publishedAt": "2026-07-02T16:52:47.184Z"
     },
     {
       "platform": "substack",
@@ -21,7 +21,7 @@
       "cover": "",
       "summary": "A recording from Anthony Huerta and Haniel Cal's live video Jun 19•Anthony HuertaandHaniel Cal",
       "link": "https://attheinnerself.substack.com/p/on-creativity-creative-problems-and",
-      "publishedAt": "2026-07-01T17:16:06.078Z"
+      "publishedAt": "2026-07-02T16:52:41.368Z"
     },
     {
       "platform": "substack",
@@ -32,7 +32,7 @@
       "cover": "",
       "summary": "\"Code and media are permissionless leverage.\" — Naval Ravikant Jun 27•Naval's Archive Specific knowledge is found by following your curiosity",
       "link": "https://navalsarchive.substack.com/p/code-and-media-are-permissionless",
-      "publishedAt": "2026-07-01T17:15:59.735Z"
+      "publishedAt": "2026-07-02T16:52:35.962Z"
     },
     {
       "platform": "substack",
@@ -43,7 +43,51 @@
       "cover": "",
       "summary": "the twenties have excellent public relations for a decade that often feels like being handed a life in flat-pack form without the tiny allen key.",
       "link": "https://ayushithakkar.substack.com/p/20s-struggle-theory",
-      "publishedAt": "2026-07-01T17:15:54.333Z"
+      "publishedAt": "2026-07-02T16:52:30.434Z"
+    },
+    {
+      "platform": "youtube",
+      "creator": "Helena Woods",
+      "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
+      "creatorAvatar": "",
+      "title": "Comment MERCURY to lock in this mercury retrograde with me",
+      "cover": "https://i4.ytimg.com/vi/woTopEjs0Xo/hqdefault.jpg",
+      "summary": "Comment MERCURY to lock in this mercury retrograde with me. Prepare for August ⚡️👇",
+      "link": "https://www.youtube.com/shorts/woTopEjs0Xo",
+      "publishedAt": "2026-07-02T15:22:15.000Z"
+    },
+    {
+      "platform": "youtube",
+      "creator": "开普勒",
+      "creatorUrl": "https://www.youtube.com/channel/UCf_It-NZmKmbi8CXNR7QDYA",
+      "creatorAvatar": "",
+      "title": "Astrological Remedies for Health 🌿#astrology #medicalastrology #health",
+      "cover": "https://i3.ytimg.com/vi/VfYOhzhtHtg/hqdefault.jpg",
+      "summary": "To join Kira Sutherland in the class 'Melothesia: Astrological Anatomy', visit: https://store.keplercollege.org/product/melothesia-astrological-anatomy-3/\n\n#astrology #medicalastrology #health",
+      "link": "https://www.youtube.com/shorts/VfYOhzhtHtg",
+      "publishedAt": "2026-07-02T14:00:17.000Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "thedankoe",
+      "creatorUrl": "https://letters.thedankoe.com/",
+      "creatorAvatar": "",
+      "title": "How To Come Up With Profound Ideas With Craig Perry",
+      "cover": "https://substack-video.s3.amazonaws.com/video_upload/post/204473092/768e0570-3180-438f-bd96-7984d81c724d/transcoded-50726.png",
+      "summary": "The secret to growing on socials while writing about ideas you love",
+      "link": "https://letters.thedankoe.com/p/how-to-come-up-with-profound-ideas",
+      "publishedAt": "2026-07-01T19:27:24.297Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "profoundideas",
+      "creatorUrl": "https://ideas.profoundideas.com/",
+      "creatorAvatar": "",
+      "title": "How To Come Up With Profound Ideas With Craig Perry",
+      "cover": "https://substack-video.s3.amazonaws.com/video_upload/post/204510635/34ce98a2-b46d-4fed-99df-45827b4c7c01/transcoded-00001.png",
+      "summary": "A recording from Craig Perry and DAN KOE's live video",
+      "link": "https://ideas.profoundideas.com/p/how-to-come-up-with-profound-ideas",
+      "publishedAt": "2026-07-01T18:57:32.288Z"
     },
     {
       "platform": "bilibili",
@@ -53,18 +97,8 @@
       "title": "【直播回放】深夜闲聊 2026年07月01日21点场",
       "cover": "https://i1.hdslb.com/bfs/archive/bd8e6acb12943692ee799a63f28f26f9e81c0054.jpg",
       "link": "https://www.bilibili.com/video/BV1VtTi6LEUt",
-      "publishedAt": "2026-07-01T16:04:28.000Z"
-    },
-    {
-      "platform": "youtube",
-      "creator": "Helena Woods",
-      "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
-      "creatorAvatar": "",
-      "title": "Astrologer life",
-      "cover": "https://i2.ytimg.com/vi/I1eZe60er9w/hqdefault.jpg",
-      "summary": "Astrologer life. Forever showing women what’s possible ⚡️",
-      "link": "https://www.youtube.com/shorts/I1eZe60er9w",
-      "publishedAt": "2026-07-01T13:13:26.000Z"
+      "publishedAt": "2026-07-01T16:04:28.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
@@ -76,39 +110,6 @@
       "summary": "A deep dive into the astrology forecast for July 2026, with astrologers Chris Brennan and Austin Coppock. \n\nThe month opens on highly unstable ground, dominated by a volatile Mars-Uranus conjunction that threatens sudden, unpredictable shifts and explosive turns. This erratic energy is ruled by a newly stationary retrograde Mercury, which has just backed away from a conjunction with Jupiter. This combination sets the stage for logistical snafus, technological difficulties, and widespread delays right out of the gate.\n\nJupiter, having just entered Leo at the end of June, begins to form a tense opposition with Pluto that goes exact around the middle of the month. This highlights major power struggles and the tension between truth and control. This opposition is part of a much larger, momentous pattern of simultaneous outer planet alignments peaking this month. As Uranus completes its first exact trine with Pluto, these planets lock into a complex basket configuration alongside Jupiter and Neptune. This heavy planetary geometry indicates that significant precursor events are unfolding in the background, particularly surrounding rapid technological or military innovations.\n\nWe finally see a more positive shift in the astrological weather during the second half of the month. Mars applies to a stabilizing, constructive sextile with Saturn, helping to ground the earlier chaos. Mercury stations direct, clearing up miscommunications, and the Sun makes its triumphant ingress into Leo to form an auspicious conjunction with Jupiter. This cazimi brings a much needed wave of radiant, showy warmth and outward confidence, despite an opposition with Pluto. However, a lingering Venus-Mars square operating in the background introduces an unwelcome element of creative friction and tension in partnerships, pitting the forces of unification against the drive to sever and divide.\n\nThis late July window ultimately serves as a temporary lull, and a calm before the storm. By early August, we swiftly transition into eclipse season, bringing weighty major endings and beginnings to the forefront, just as Venus enters the shadow sign of its upcoming retrograde phase.\n\nThis is episode 541 of The Astrology Podcast. \n\nUnited Astrology Conference\n\nhttps://uacastrology.com\n\nAustin's Website\n\nhttps://austincoppock.com\n\nTimestamps\n\n00:00:00 Introduction\n00:00:53 July Astrology Quick Overview\n00:03:57 News Segment Begins\n00:04:51 Venus-Jupiter Conjunction Stories\n00:05:13 First Trillionaire\n00:08:49 Spielberg Disclosure Day\n00:13:45 Marriages\n00:16:25 Iran-US peace deal\n00:20:31 Zelda Remake\n00:22:07 Beer Shortage\n00:24:04 Venus-Pluto Opposition\n00:26:50 Mars-Uranus Stories\n00:27:06 Venezuela Earthquakes\n00:29:47 AI Companies Authorized\n00:35:03 Lebanon agreement\n00:36:17 Nuclear news on Mars ingress\n00:38:36 Wrapping up news segment\n00:41:43 United Astrology Conference\n00:46:04 July Forecast Begins\n00:47:06 Mars-Uranus Conjunction\n00:59:34 Mercury Retrograde\n01:02:11 Outer planet alignments\n01:09:07 Jupiter-Pluto opposition\n01:25:23 Sequential breakdown of the month\n01:25:46 July 1: Mars-Uranus Overview &amp; Sun-Saturn Square\n01:26:55 July 7: Neptune Stations Retrograde in Aries\n01:29:45 July 9: Venus Enters Virgo\n01:31:33 July 12: Mercury Retrograde Cazimi\n01:33:08 July 14: New Moon in Cancer\n01:35:58 July 15-18: Uranus Sextile Neptune &amp; Trine Pluto\n01:39:35 July 19: Mars Sextile Saturn\n01:41:21 July 20-21: Jupiter-Pluto Opposition &amp; Outer Planet Aspects\n01:50:54 July 22-23: Sun Enters Leo &amp; Mercury Stations Direct\n01:51:52 July 24: Venus Sextile Mercury\n01:54:44 July 25: Neptune-Pluto Sextile\n01:55:04 July 26: Saturn Stations Retrograde &amp; Lunar Nodes Shift Signs\n01:57:33 July 27: Sun Opposes Pluto\n01:58:55 July 28: Venus Square Mars\n02:02:29 July 29: Sun-Jupiter Cazimi &amp; Full Moon in Aquarius\n02:04:31 Electional Chart for July\n02:07:42 Wrapping Up\n02:17:39 Credits",
       "link": "https://www.youtube.com/watch?v=VZ0uN2QpczA",
       "publishedAt": "2026-06-29T20:33:22.000Z"
-    },
-    {
-      "platform": "youtube",
-      "creator": "开普勒",
-      "creatorUrl": "https://www.youtube.com/channel/UCf_It-NZmKmbi8CXNR7QDYA",
-      "creatorAvatar": "",
-      "title": "Astrology Forecast July 2026 (All Rising Signs)",
-      "cover": "https://i2.ytimg.com/vi/IWJJzHP_LE0/hqdefault.jpg",
-      "summary": "What does July have in store for you? Join our esteemed faculty member Celeste Brooks as we discuss the astrology of July 2026 (with all rising signs!)\n\nTo view our current class offerings, visit: https://store.keplercollege.org/current-course-offerings/\n\nTo learn more about Celeste's wonderful work, visit: \n\nWebsite: https://www.astrologybyceleste.com/\nPodcast: https://celestialinsightspodcast.podbean.com/\nInstagram: https://www.instagram.com/astrologybyceleste/     \nThreads: astrologybyceleste\nYouTube: https://www.youtube.com/@astrologybyceleste/videos     \nFacebook: https://www.facebook.com/astrologybyceleste    \nTikTok: https://www.tiktok.com/@UCfmdE6SY9s41lNLjefuRmIg     \nLinkedIn: https://www.linkedin.com/in/astrologybyceleste/  \n\nAbout Celeste: \nCeleste Brooks is an astrologer, coach, and teacher specializing in natal, mundane, and horary astrology. Her podcast, Celestial Insights, offers weekly guidance. She discusses the astrology of current events on her popular Instagram lives. Celeste is an OPA board member and Transit Talk host. Celeste lectures for astrology organizations, schools, and conferences, including OPA, ISAR, Kepler College, Astrology Hub, Synchronicity University, and NORWAC. Her email is celeste@astrologybyceleste.com. Her website is www.astrologybyceleste.com.\n\nGraphic design by Mary Gaterud at: https://purazuma.com/\n\n\n#astrology  #astrologyforecast  #transits #july2026 #celestebrooks #keplercollege \n\nChapters:\n\n00:00 Introduction\n01:11 Overview Of Current Events\n03:22 1st Week Of July\n30:39 2nd Week Of July\n40:25 3rd Week Of July\n46:04 4th Week Of July\n1:02:40 5th Week Of July\n1:19:34 Aries Rising \n1:24:02 Taurus Rising \n1:29:15 Gemini Rising \n1:35:11 Cancer Rising \n1:44:02 Leo Rising \n1:51:32 Virgo Rising \n1:57:56 Libra Rising\n2:03:29 Scorpio Rising \n2:09:26 Sagittarius Rising \n2:14:35 Capricorn Rising \n2:19:49 Aquarius Rising  \n2:25:08 Pisces Rising \n2:30:27 Find More About Celeste!\n2:32:37 Conclusion \n\nRecorded June 2026\n\nOpinion Disclaimer: All views expressed by the host and guest(s) are solely theirs and may not reflect the views of Kepler College. Please keep your comments respectful. Thank you.",
-      "link": "https://www.youtube.com/watch?v=IWJJzHP_LE0",
-      "publishedAt": "2026-06-28T15:00:01.000Z"
-    },
-    {
-      "platform": "substack",
-      "creator": "profoundideas",
-      "creatorUrl": "https://ideas.profoundideas.com/",
-      "creatorAvatar": "",
-      "title": "Give yourself a reason to run your own life",
-      "cover": "https://substackcdn.com/image/fetch/$s_!5rt1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fc15634-0a88-4b51-b319-b4de0bca2f07_10192x5861.png",
-      "summary": "Let's fix your attention in 2 steps. So you don't waste your one and only life.",
-      "link": "https://ideas.profoundideas.com/p/give-yourself-a-reason-to-run-your",
-      "publishedAt": "2026-06-23T06:23:53.313Z"
-    },
-    {
-      "platform": "substack",
-      "creator": "thedankoe",
-      "creatorUrl": "https://letters.thedankoe.com/",
-      "creatorAvatar": "",
-      "title": "How to become so valuable AI will never replace you",
-      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/d385a555-a172-4f42-bd13-85e2e104f173_1920x1080.jpeg",
-      "summary": "These 5 skills will determine your future",
-      "link": "https://letters.thedankoe.com/p/how-to-survive-ai-mass-replacement",
-      "publishedAt": "2026-06-22T22:13:18.135Z"
     },
     {
       "platform": "bilibili",
