@@ -16,6 +16,7 @@
     { "name": "navalsarchive",  "feedUrl": "https://navalsarchive.substack.com/feed" },
     { "name": "attheinnerself", "feedUrl": "https://attheinnerself.substack.com/feed" },
     { "name": "hussainibarra",  "feedUrl": "https://hussainibarra.substack.com/feed" },
-    { "name": "thedankoe",      "feedUrl": "https://letters.thedankoe.com/feed" }
+    { "name": "thedankoe",      "feedUrl": "https://letters.thedankoe.com/feed" },
+    { "name": "hasif",          "feedUrl": "https://hasifff.substack.com/feed" }
   ]
 }
