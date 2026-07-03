@@ -1,6 +1,17 @@
 {
-  "updatedAt": "2026-07-02T16:52:48.438Z",
+  "updatedAt": "2026-07-03T15:33:56.017Z",
   "items": [
+    {
+      "platform": "substack",
+      "creator": "hasif",
+      "creatorUrl": "https://hasifff.substack.com/",
+      "creatorAvatar": "",
+      "title": "Can We Ever Really Know What's Right for Us?",
+      "cover": "",
+      "summary": "The search for direction begins where the need for certainty ends. 2 hrs ago•hasif 💌 58 1 15 !Image 3",
+      "link": "https://hasifff.substack.com/p/can-we-ever-really-know-whats-right",
+      "publishedAt": "2026-07-03T15:33:55.510Z"
+    },
     {
       "platform": "substack",
       "creator": "hussainibarra",
@@ -10,7 +21,7 @@
       "cover": "",
       "summary": "I’ve gained a lot of new readers over the past few weeks. Jun 30•Hussain Ibarra !Image 1",
       "link": "https://hussainibarra.substack.com/p/my-story-who-the-fck-is-hussain-ibarra",
-      "publishedAt": "2026-07-02T16:52:47.184Z"
+      "publishedAt": "2026-07-03T15:33:50.544Z"
     },
     {
       "platform": "substack",
@@ -21,7 +32,7 @@
       "cover": "",
       "summary": "A recording from Anthony Huerta and Haniel Cal's live video Jun 19•Anthony HuertaandHaniel Cal",
       "link": "https://attheinnerself.substack.com/p/on-creativity-creative-problems-and",
-      "publishedAt": "2026-07-02T16:52:41.368Z"
+      "publishedAt": "2026-07-03T15:33:43.258Z"
     },
     {
       "platform": "substack",
@@ -32,29 +43,39 @@
       "cover": "",
       "summary": "\"Code and media are permissionless leverage.\" — Naval Ravikant Jun 27•Naval's Archive Specific knowledge is found by following your curiosity",
       "link": "https://navalsarchive.substack.com/p/code-and-media-are-permissionless",
-      "publishedAt": "2026-07-02T16:52:35.962Z"
+      "publishedAt": "2026-07-03T15:33:37.131Z"
     },
     {
       "platform": "substack",
       "creator": "ayushithakkar",
       "creatorUrl": "https://ayushithakkar.substack.com/",
       "creatorAvatar": "",
-      "title": "20s struggle theory",
+      "title": "how to stop being hard on yourself",
       "cover": "",
-      "summary": "the twenties have excellent public relations for a decade that often feels like being handed a life in flat-pack form without the tiny allen key.",
-      "link": "https://ayushithakkar.substack.com/p/20s-struggle-theory",
-      "publishedAt": "2026-07-02T16:52:30.434Z"
+      "summary": "being hard on yourself can feel like a form of responsibility, which is what makes it so difficult to give up. 12 hrs ago•ayushi thakkar",
+      "link": "https://ayushithakkar.substack.com/p/how-to-stop-being-hard-on-yourself",
+      "publishedAt": "2026-07-03T15:33:24.866Z"
+    },
+    {
+      "platform": "bilibili",
+      "creator": "像素范",
+      "creatorUrl": "https://space.bilibili.com/15741969",
+      "creatorAvatar": "",
+      "title": "父母给你托底越多，你的野心就越少。",
+      "cover": "https://i2.hdslb.com/bfs/archive/63895be4555f8d2ce1968784651c2e1b853c110d.jpg",
+      "link": "https://www.bilibili.com/video/BV1qyTx69Edu",
+      "publishedAt": "2026-07-03T13:07:11.000Z"
     },
     {
       "platform": "youtube",
       "creator": "Helena Woods",
       "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
       "creatorAvatar": "",
-      "title": "Comment MERCURY to lock in this mercury retrograde with me",
-      "cover": "https://i4.ytimg.com/vi/woTopEjs0Xo/hqdefault.jpg",
-      "summary": "Comment MERCURY to lock in this mercury retrograde with me. Prepare for August ⚡️👇",
-      "link": "https://www.youtube.com/shorts/woTopEjs0Xo",
-      "publishedAt": "2026-07-02T15:22:15.000Z"
+      "title": "Taylor Swift, this can’t be real",
+      "cover": "https://i2.ytimg.com/vi/A0efEyIOFTo/hqdefault.jpg",
+      "summary": "Taylor Swift, this can’t be real. #astrology\n\nI would put my money down that she’s a Capricorn rising, with a Scorpio Midheaven. *video correction: Scorpio Midheaven not rising",
+      "link": "https://www.youtube.com/shorts/A0efEyIOFTo",
+      "publishedAt": "2026-07-02T19:26:53.000Z"
     },
     {
       "platform": "youtube",
@@ -85,20 +106,9 @@
       "creatorAvatar": "",
       "title": "How To Come Up With Profound Ideas With Craig Perry",
       "cover": "https://substack-video.s3.amazonaws.com/video_upload/post/204510635/34ce98a2-b46d-4fed-99df-45827b4c7c01/transcoded-00001.png",
-      "summary": "A recording from Craig Perry and DAN KOE's live video",
+      "summary": "The long-form writing process, in all it's glory, for talking about your interests (and profound ideas) and actually building an audience doing so.",
       "link": "https://ideas.profoundideas.com/p/how-to-come-up-with-profound-ideas",
       "publishedAt": "2026-07-01T18:57:32.288Z"
-    },
-    {
-      "platform": "bilibili",
-      "creator": "像素范",
-      "creatorUrl": "https://space.bilibili.com/15741969",
-      "creatorAvatar": "",
-      "title": "【直播回放】深夜闲聊 2026年07月01日21点场",
-      "cover": "https://i1.hdslb.com/bfs/archive/bd8e6acb12943692ee799a63f28f26f9e81c0054.jpg",
-      "link": "https://www.bilibili.com/video/BV1VtTi6LEUt",
-      "publishedAt": "2026-07-01T16:04:28.000Z",
-      "stale": true
     },
     {
       "platform": "youtube",
