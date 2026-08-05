@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-08-04T16:56:28.830Z",
+  "updatedAt": "2026-08-05T16:49:22.221Z",
   "items": [
     {
       "platform": "substack",
       "creator": "hasif",
       "creatorUrl": "https://hasifff.substack.com/",
       "creatorAvatar": "",
-      "title": "I Was Never Meant to Grow Old",
+      "title": "Submit Your Essays, Stories & Personal Writing",
       "cover": "",
-      "summary": "On Carrying a Young Heart Through the Passing of Time Aug 3•hasif 💌 119 17 40 !Image 3",
-      "link": "https://hasifff.substack.com/p/i-was-never-meant-to-grow-old",
-      "publishedAt": "2026-08-04T16:56:28.323Z"
+      "summary": "Hello Fifi’s, 1 hr ago•hasif 💌 14 1 3 !Image 3",
+      "link": "https://hasifff.substack.com/p/submit-your-essays-stories-and-personal",
+      "publishedAt": "2026-08-05T16:49:21.713Z"
     },
     {
       "platform": "substack",
       "creator": "hussainibarra",
       "creatorUrl": "https://hussainibarra.substack.com/",
       "creatorAvatar": "",
-      "title": "Happiness is a skill (here's how you can master it):",
+      "title": "How to build a beautiful mind",
       "cover": "",
-      "summary": "How to live in human optimal experience in 5 steps: Jul 16•Hussain Ibarra !Image 1",
-      "link": "https://hussainibarra.substack.com/p/happiness-is-a-skill-heres-how-you",
-      "publishedAt": "2026-08-04T16:56:22.622Z"
+      "summary": "The process behind building a more intelligent mind and how you can do it (step-by-step). 8 hrs ago•Hussain Ibarra",
+      "link": "https://hussainibarra.substack.com/p/how-to-build-a-beautiful-mind",
+      "publishedAt": "2026-08-05T16:49:17.356Z"
     },
     {
       "platform": "substack",
@@ -32,7 +32,7 @@
       "cover": "",
       "summary": "A recording from Anthony Huerta and Haniel Cal's live video Jun 19•Anthony HuertaandHaniel Cal",
       "link": "https://attheinnerself.substack.com/p/on-creativity-creative-problems-and",
-      "publishedAt": "2026-08-04T16:56:10.089Z"
+      "publishedAt": "2026-08-05T16:49:12.541Z"
     },
     {
       "platform": "substack",
@@ -43,7 +43,7 @@
       "cover": "",
       "summary": "Luck and effort. Jul 27•Naval's Archive !Image 1",
       "link": "https://navalsarchive.substack.com/p/get-lucky-on-purpose",
-      "publishedAt": "2026-08-04T16:56:05.767Z"
+      "publishedAt": "2026-08-05T16:49:06.507Z"
     },
     {
       "platform": "substack",
@@ -54,7 +54,7 @@
       "cover": "",
       "summary": "Identity, belonging, Korean history, and the lifelong search for home. Aug 1•ayushi thakkar",
       "link": "https://ayushithakkar.substack.com/p/can-you-ever-belong-to-a-culture",
-      "publishedAt": "2026-08-04T16:56:00.872Z"
+      "publishedAt": "2026-08-05T16:49:02.062Z"
     },
     {
       "platform": "bilibili",
@@ -64,7 +64,8 @@
       "title": "君子豹变，所有向外找原因的人，都在原地烂下去。",
       "cover": "https://i2.hdslb.com/bfs/archive/b49961d79f15e1219f6321b8b3a26199174febc3.jpg",
       "link": "https://www.bilibili.com/video/BV1kDuA6MEmu",
-      "publishedAt": "2026-08-04T11:55:21.000Z"
+      "publishedAt": "2026-08-04T11:55:21.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
