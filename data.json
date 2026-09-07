@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-09-06T17:36:25.102Z",
+  "updatedAt": "2026-09-07T19:05:30.708Z",
   "items": [
     {
       "platform": "substack",
       "creator": "hasif",
       "creatorUrl": "https://hasifff.substack.com/",
       "creatorAvatar": "",
-      "title": "The Human Need for Closure",
+      "title": "The Hunger to Be Understood",
       "cover": "",
-      "summary": "On unanswered questions, unfinished stories, and learning to move forward anyway Sep 5•hasif 💌 114 11 24 !Image 3",
-      "link": "https://hasifff.substack.com/p/the-human-need-for-closure",
-      "publishedAt": "2026-09-06T17:36:24.597Z"
+      "summary": "On validation, self-trust, and learning to understand ourselves 5 hrs ago•hasif 💌 64 3 14 !Image 3",
+      "link": "https://hasifff.substack.com/p/the-hunger-to-be-understood",
+      "publishedAt": "2026-09-07T19:05:30.201Z"
     },
     {
       "platform": "substack",
@@ -21,7 +21,7 @@
       "cover": "",
       "summary": "Archive Latest Top Discussions How to escape beginner’s hell in 3-6 months (with detailed instructions)",
       "link": "https://hussainibarra.substack.com/p/how-to-escape-beginners-hell-in-3",
-      "publishedAt": "2026-09-06T17:36:19.935Z"
+      "publishedAt": "2026-09-07T19:05:24.578Z"
     },
     {
       "platform": "substack",
@@ -30,9 +30,9 @@
       "creatorAvatar": "",
       "title": "The Simple Genius Of David Senra.",
       "cover": "",
-      "summary": "The simple genius of David Senra. 19 hrs ago•Anthony Huerta !Image 2",
+      "summary": "The simple genius of David Senra. Sep 5•Anthony Huerta 4 4 !Image 2",
       "link": "https://attheinnerself.substack.com/p/he-spent-9-years-studying-dead-founders",
-      "publishedAt": "2026-09-06T17:36:14.618Z"
+      "publishedAt": "2026-09-07T19:05:20.594Z"
     },
     {
       "platform": "substack",
@@ -43,29 +43,40 @@
       "cover": "",
       "summary": "Luck and effort. Jul 27•Naval's Archive !Image 1",
       "link": "https://navalsarchive.substack.com/p/get-lucky-on-purpose",
-      "publishedAt": "2026-09-06T17:36:10.032Z"
+      "publishedAt": "2026-09-07T19:05:04.117Z"
     },
     {
       "platform": "substack",
       "creator": "ayushithakkar",
       "creatorUrl": "https://ayushithakkar.substack.com/",
       "creatorAvatar": "",
-      "title": "28 ideas for what to keep in a commonplace book",
+      "title": "how to find a life that feels like yours",
       "cover": "",
-      "summary": "for anyone with 600 screenshots, 47 open tabs and several notebooks they’re afraid to ruin 14 hrs ago•ayushi thakkar",
-      "link": "https://ayushithakkar.substack.com/p/28-ideas-for-what-to-keep-in-a-commonplace",
-      "publishedAt": "2026-09-06T17:36:05.923Z"
+      "summary": "a guide to figuring out what you actually want your ordinary days to look like 15 hrs ago•ayushi thakkar",
+      "link": "https://ayushithakkar.substack.com/p/how-to-find-a-life-that-feels-like",
+      "publishedAt": "2026-09-07T19:04:59.700Z"
     },
     {
       "platform": "youtube",
       "creator": "Helena Woods",
       "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
       "creatorAvatar": "",
-      "title": "Comment GRID to learn the power of Astro mapping for free ⤵️ #astrocartography follow for all your",
-      "cover": "https://i3.ytimg.com/vi/R0qf2q8LsNM/hqdefault.jpg",
-      "summary": "Comment GRID to learn the power of Astro mapping for free ⤵️ #astrocartography\n\nfollow for all your astrocartography and astrology travel updates 🗞️",
-      "link": "https://www.youtube.com/shorts/R0qf2q8LsNM",
-      "publishedAt": "2026-09-06T16:08:48.000Z"
+      "title": "Astrology signs that should travel before Venus goes retrograde (and then Mercury 🫠) don’t say I",
+      "cover": "https://i4.ytimg.com/vi/WROuHYlyCj8/hqdefault.jpg",
+      "summary": "Astrology signs that should travel before Venus goes retrograde (and then Mercury 🫠) don’t say I didn’t tell you! \n\nComment GRID to learn astrocartography for free in my masterclass and follow 👉 for your astrocartography and Astro travel updates 🤓 📰 🗺️",
+      "link": "https://www.youtube.com/shorts/WROuHYlyCj8",
+      "publishedAt": "2026-09-06T21:06:44.000Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "thedankoe",
+      "creatorUrl": "https://letters.thedankoe.com/",
+      "creatorAvatar": "",
+      "title": "The One-Human Business: How To Earn In The Age of AI",
+      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/e61e58bd-23c4-4b62-bec7-4ebefe8ef6f7_1920x1080.jpeg",
+      "summary": "Your interests + social media + AI = modern business",
+      "link": "https://letters.thedankoe.com/p/the-one-human-business-how-to-earn",
+      "publishedAt": "2026-09-06T19:22:36.591Z"
     },
     {
       "platform": "youtube",
@@ -86,7 +97,8 @@
       "title": "惠英红：「直到最后，我也没等到她的肯定」",
       "cover": "https://i0.hdslb.com/bfs/archive/8773a5f51c5ee1ea5a06967bff41c464345979f9.jpg",
       "link": "https://www.bilibili.com/video/BV1GBti6cEFP",
-      "publishedAt": "2026-09-05T04:00:00.000Z"
+      "publishedAt": "2026-09-05T04:00:00.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
@@ -122,17 +134,6 @@
       "publishedAt": "2026-08-31T11:51:35.480Z"
     },
     {
-      "platform": "substack",
-      "creator": "thedankoe",
-      "creatorUrl": "https://letters.thedankoe.com/",
-      "creatorAvatar": "",
-      "title": "We are in the middle of the digital renaissance, please take advantage of it",
-      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/488ffc38-26aa-4bcd-88dd-1ba206b5af09_2912x1632.png",
-      "summary": "why polymaths win in the AI age",
-      "link": "https://letters.thedankoe.com/p/we-are-in-the-middle-of-the-digital",
-      "publishedAt": "2026-08-27T18:57:41.763Z"
-    },
-    {
       "platform": "bilibili",
       "creator": "水球泡",
       "creatorUrl": "https://space.bilibili.com/543740406",
@@ -140,8 +141,7 @@
       "title": "25届教育学研究生情侣，在上海当中职老师月薪5千，还不如刷盘子？高学历低薪的你，在职业选择上到底做错了什么?",
       "cover": "https://i2.hdslb.com/bfs/archive/63d443780b7aed3402c966f8726bd48eaecdf31b.jpg",
       "link": "https://www.bilibili.com/video/BV1Twuz6mE3H",
-      "publishedAt": "2026-08-19T13:00:00.000Z",
-      "stale": true
+      "publishedAt": "2026-08-19T13:00:00.000Z"
     },
     {
       "platform": "bilibili",
