@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T19:18:07.846Z",
+  "updatedAt": "2026-11-08T19:25:31.118Z",
   "items": [
     {
       "platform": "substack",
@@ -8,9 +8,9 @@
       "creatorAvatar": "",
       "title": "Nobody Really Knows Themselves",
       "cover": "",
-      "summary": "On growing up, changing your mind, and realising you were never quite who you thought you were. 9 hrs ago•hasif 💌",
+      "summary": "On growing up, changing your mind, and realising you were never quite who you thought you were. Nov 7•hasif 💌",
       "link": "https://hasifff.substack.com/p/nobody-really-knows-themselves",
-      "publishedAt": "2026-11-07T19:18:07.340Z"
+      "publishedAt": "2026-11-08T19:25:30.610Z"
     },
     {
       "platform": "substack",
@@ -21,7 +21,7 @@
       "cover": "",
       "summary": "Archive How to thrive in the next decade (do it in this order) A guide to turning your interests, experiences, and knowledge into a one-person business",
       "link": "https://hussainibarra.substack.com/p/how-to-escape-beginners-hell-in-3",
-      "publishedAt": "2026-11-07T19:18:02.262Z"
+      "publishedAt": "2026-11-08T19:25:26.544Z"
     },
     {
       "platform": "substack",
@@ -30,9 +30,9 @@
       "creatorAvatar": "",
       "title": "You're Wasting Years Learning Lessons You Could Read in a Book",
       "cover": "",
-      "summary": "Study the greats. Oct 25•Anthony Huerta 38 4 11 !Image 2",
+      "summary": "Study the greats. Oct 25•Anthony Huerta 40 4 11 !Image 2",
       "link": "https://attheinnerself.substack.com/p/youre-wasting-years-learning-lessons",
-      "publishedAt": "2026-11-07T19:17:57.564Z"
+      "publishedAt": "2026-11-08T19:25:23.069Z"
     },
     {
       "platform": "substack",
@@ -43,7 +43,7 @@
       "cover": "",
       "summary": "A breakdown of Naval’s 68-minute conversation with Garry Tan, Daniel Francis, and Farbood Nivi Oct 6•Naval's Archive",
       "link": "https://navalsarchive.substack.com/p/live-in-the-future-what-naval-and",
-      "publishedAt": "2026-11-07T19:17:54.060Z"
+      "publishedAt": "2026-11-08T19:25:19.930Z"
     },
     {
       "platform": "substack",
@@ -54,7 +54,18 @@
       "cover": "",
       "summary": "i love discovering something completely unrelated to anything i was supposed to be doing and then spending the next three hours learning everything…",
       "link": "https://ayushithakkar.substack.com/p/12-interesting-topics-to-nerd-out",
-      "publishedAt": "2026-11-07T19:17:49.724Z"
+      "publishedAt": "2026-11-08T19:25:15.909Z"
+    },
+    {
+      "platform": "youtube",
+      "creator": "Helena Woods",
+      "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
+      "creatorAvatar": "",
+      "title": "Comment “GRID” to learn astrocartography and the power of place for free 🌎⤵️",
+      "cover": "https://i3.ytimg.com/vi/RPk0-U1-y_0/hqdefault.jpg",
+      "summary": "Comment “GRID” to learn astrocartography and the power of place for free 🌎⤵️",
+      "link": "https://www.youtube.com/shorts/RPk0-U1-y_0",
+      "publishedAt": "2026-11-08T04:57:12.000Z"
     },
     {
       "platform": "youtube",
@@ -75,18 +86,8 @@
       "title": "AI是黄河改道：这是机会，不是苦难",
       "cover": "https://i2.hdslb.com/bfs/archive/cccfd058f17c4a496a07be682f8b3cb2911ac0cf.jpg",
       "link": "https://www.bilibili.com/video/BV1mC456WEVr",
-      "publishedAt": "2026-11-07T00:05:00.000Z"
-    },
-    {
-      "platform": "youtube",
-      "creator": "Helena Woods",
-      "creatorUrl": "https://www.youtube.com/channel/UCnf8AdU4Qu5qgMFBno0oRJA",
-      "creatorAvatar": "",
-      "title": "There is one way to live and it’s up and up only",
-      "cover": "https://i1.ytimg.com/vi/TEX8tUKCzJ0/hqdefault.jpg",
-      "summary": "There is one way to live and it’s up and up only. \n\nI am absolutely and without a doubt unavailable for anything less. \n\nSome mars in Leo audacious energy for your day ⚡️\n\nComment “best day” to reconnect with your magic",
-      "link": "https://www.youtube.com/shorts/TEX8tUKCzJ0",
-      "publishedAt": "2026-11-06T23:03:31.000Z"
+      "publishedAt": "2026-11-07T00:05:00.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
@@ -151,7 +152,8 @@
       "title": "25届教育学研究生情侣，在上海当中职老师月薪5千，还不如刷盘子？高学历低薪的你，在职业选择上到底做错了什么?",
       "cover": "https://i2.hdslb.com/bfs/archive/63d443780b7aed3402c966f8726bd48eaecdf31b.jpg",
       "link": "https://www.bilibili.com/video/BV1Twuz6mE3H",
-      "publishedAt": "2026-08-19T13:00:00.000Z"
+      "publishedAt": "2026-08-19T13:00:00.000Z",
+      "stale": true
     }
   ]
 }
