@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-08T19:25:31.118Z",
+  "updatedAt": "2026-11-09T23:46:41.580Z",
   "items": [
     {
       "platform": "substack",
       "creator": "hasif",
       "creatorUrl": "https://hasifff.substack.com/",
       "creatorAvatar": "",
-      "title": "Nobody Really Knows Themselves",
+      "title": "I Tried Dating Myself. Turns Out, I'm Not My Type.",
       "cover": "",
-      "summary": "On growing up, changing your mind, and realising you were never quite who you thought you were. Nov 7•hasif 💌",
-      "link": "https://hasifff.substack.com/p/nobody-really-knows-themselves",
-      "publishedAt": "2026-11-08T19:25:30.610Z"
+      "summary": "Turns out, spending time with yourself isn't always as romantic as Instagram makes it look. 11 hrs ago•hasif 💌",
+      "link": "https://hasifff.substack.com/p/i-tried-dating-myself-turns-out-im",
+      "publishedAt": "2026-11-09T23:46:41.075Z"
     },
     {
       "platform": "substack",
@@ -21,7 +21,7 @@
       "cover": "",
       "summary": "Archive How to thrive in the next decade (do it in this order) A guide to turning your interests, experiences, and knowledge into a one-person business",
       "link": "https://hussainibarra.substack.com/p/how-to-escape-beginners-hell-in-3",
-      "publishedAt": "2026-11-08T19:25:26.544Z"
+      "publishedAt": "2026-11-09T23:46:34.895Z"
     },
     {
       "platform": "substack",
@@ -30,9 +30,9 @@
       "creatorAvatar": "",
       "title": "You're Wasting Years Learning Lessons You Could Read in a Book",
       "cover": "",
-      "summary": "Study the greats. Oct 25•Anthony Huerta 40 4 11 !Image 2",
+      "summary": "Study the greats. Oct 25•Anthony Huerta 43 4 12 !Image 3",
       "link": "https://attheinnerself.substack.com/p/youre-wasting-years-learning-lessons",
-      "publishedAt": "2026-11-08T19:25:23.069Z"
+      "publishedAt": "2026-11-09T23:46:30.408Z"
     },
     {
       "platform": "substack",
@@ -43,18 +43,49 @@
       "cover": "",
       "summary": "A breakdown of Naval’s 68-minute conversation with Garry Tan, Daniel Francis, and Farbood Nivi Oct 6•Naval's Archive",
       "link": "https://navalsarchive.substack.com/p/live-in-the-future-what-naval-and",
-      "publishedAt": "2026-11-08T19:25:19.930Z"
+      "publishedAt": "2026-11-09T23:46:14.271Z"
     },
     {
       "platform": "substack",
       "creator": "ayushithakkar",
       "creatorUrl": "https://ayushithakkar.substack.com/",
       "creatorAvatar": "",
-      "title": "12 interesting topics to nerd out on",
+      "title": "how do you reward yourself for meeting your own expectations?",
       "cover": "",
-      "summary": "i love discovering something completely unrelated to anything i was supposed to be doing and then spending the next three hours learning everything…",
-      "link": "https://ayushithakkar.substack.com/p/12-interesting-topics-to-nerd-out",
-      "publishedAt": "2026-11-08T19:25:15.909Z"
+      "summary": "the problem with being good at getting things done is that eventually everybody expects you to get things done, including yourself.",
+      "link": "https://ayushithakkar.substack.com/p/how-do-you-reward-yourself-for-meeting",
+      "publishedAt": "2026-11-09T23:46:09.754Z"
+    },
+    {
+      "platform": "substack",
+      "creator": "profoundideas",
+      "creatorUrl": "https://ideas.profoundideas.com/",
+      "creatorAvatar": "",
+      "title": "How to replace doomscrolling with essay writing",
+      "cover": "https://substackcdn.com/image/fetch/$s_!ae4P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0299451-8d10-40d5-8bba-4baab4e17650_2653x1254.jpeg",
+      "summary": "learn to think, save your mind, own your damn life",
+      "link": "https://ideas.profoundideas.com/p/how-to-replace-doomscrolling-with",
+      "publishedAt": "2026-11-09T20:30:08.000Z"
+    },
+    {
+      "platform": "bilibili",
+      "creator": "这个月",
+      "creatorUrl": "https://space.bilibili.com/173986740",
+      "creatorAvatar": "",
+      "title": "入秋45件好物爽开｜超长下饭",
+      "cover": "https://i1.hdslb.com/bfs/archive/bd3011b3f78207cffff9170703327536cefa1106.jpg",
+      "link": "https://www.bilibili.com/video/BV1UzW86hEBh",
+      "publishedAt": "2026-11-09T13:09:48.000Z"
+    },
+    {
+      "platform": "bilibili",
+      "creator": "像素范",
+      "creatorUrl": "https://space.bilibili.com/15741969",
+      "creatorAvatar": "",
+      "title": "国产大模型竞争到最后，什么才是长期优势？",
+      "cover": "https://i0.hdslb.com/bfs/archive/5a84ec4344184f39cedaa3e5e6dc8fb066140bdb.jpg",
+      "link": "https://www.bilibili.com/video/BV1XzWn6zEPx",
+      "publishedAt": "2026-11-09T00:05:00.000Z"
     },
     {
       "platform": "youtube",
@@ -65,7 +96,8 @@
       "cover": "https://i3.ytimg.com/vi/RPk0-U1-y_0/hqdefault.jpg",
       "summary": "Comment “GRID” to learn astrocartography and the power of place for free 🌎⤵️",
       "link": "https://www.youtube.com/shorts/RPk0-U1-y_0",
-      "publishedAt": "2026-11-08T04:57:12.000Z"
+      "publishedAt": "2026-11-08T04:57:12.000Z",
+      "stale": true
     },
     {
       "platform": "youtube",
@@ -76,17 +108,7 @@
       "cover": "https://i3.ytimg.com/vi/vvZ5k58erSI/hqdefault.jpg",
       "summary": "In this episode I share a second installment of news stories and cultural events that have been coinciding with the current Venus retrograde in the signs of Scorpio and Libra over the past few weeks.\n\nAlong the way I examine how eight-year repetitions and the retrograde cazimi with the Sun have been showing up in stories involving past relationships, unearthed secrets, difficult family dynamics, and notable turning points in pop culture.\n\nStudying these repetitions as they unfold in real time provides a deeper perspective on the astrology underlying current events, and helps us understand the complex nature of Venus as a planet.\n\nThis is episode 557 of The Astrology Podcast. \n\n*Sale on Chris’ Courses*\n\nUse the promo code RETROGRADE to get a 15% discount on Chris’ courses this month:\n\nhttps://theastrologyschool.com\n\n*Timestamps*\n\n00:00:00 Intro\n00:01:16 Gavin Rossdale reflects on Gwen Stefani\n00:05:01 10 Things I Hate About You &amp; Alex Mack reunions\n00:06:45 Amy Acton political ad &amp; 1978 recurrence\n00:12:02 Ethan Klein H3 Podcast scandal\n00:18:40 Meghan Markle's father &amp; 2018 recurrence\n00:23:27 Hitler's Eagle's Nest destroyed in fire\n00:26:46 Bob Woodward book spills secrets\n00:29:54 Collin Gosselin memoir &amp; Jon &amp; Kate Plus 8\n00:32:33 Viral TikTok wedding interruptions\n00:39:31 Ted Bundy confirmed in 1974 cold case\n00:43:57 Meta AI chatbot &amp; human-AI relationships\n00:49:02 Qwen AI single neuron tweak turns hostile\n00:53:50 Cleveland pastor introduces second wife\n00:55:29 Natalie Portman interviews &amp; upcoming roles\n00:57:22 Matthew Perry documentary &amp; Friends (1994)\n01:09:38 Iconic TV shows born under Venus retrograde\n01:12:43 Jack Parsons &amp; Marjorie Cameron occult marriage\n01:15:17 UK criminalizes certain types of pornography\n01:16:35 Margaret Qualley divorce &amp; Jenna Ortega box office\n01:22:06 Binance $6.3B cryptocurrency hack\n01:22:43 History of Halloween &amp; Venus retrograde in Scorpio\n01:30:49 Record-breaking La Catrina sculpture in Mexico City\n01:32:39 Inde Navarrette on SNL &amp; Obsession\n01:36:42 Goddesses: A History of Love and War book\n01:41:51 Concluding thoughts &amp; wrap-up",
       "link": "https://www.youtube.com/watch?v=vvZ5k58erSI",
-      "publishedAt": "2026-11-07T06:16:52.000Z"
-    },
-    {
-      "platform": "bilibili",
-      "creator": "像素范",
-      "creatorUrl": "https://space.bilibili.com/15741969",
-      "creatorAvatar": "",
-      "title": "AI是黄河改道：这是机会，不是苦难",
-      "cover": "https://i2.hdslb.com/bfs/archive/cccfd058f17c4a496a07be682f8b3cb2911ac0cf.jpg",
-      "link": "https://www.bilibili.com/video/BV1mC456WEVr",
-      "publishedAt": "2026-11-07T00:05:00.000Z",
+      "publishedAt": "2026-11-07T06:16:52.000Z",
       "stale": true
     },
     {
@@ -98,7 +120,8 @@
       "cover": "https://i3.ytimg.com/vi/zhYPsFFVmCQ/hqdefault.jpg",
       "summary": "Join our esteemed panel of astrologers as we discuss the US Midterm elections and what happens next!\n\n#astrology #election #usa \n\nTo view our current class offerings, visit: https://store.keplercollege.org/current-course-offerings/\n\nTo learn more about our brilliant faculty members, visit:\n\nCeleste Brooks -\n\nWebsite: https://www.astrologybyceleste.com/\nPodcast: https://celestialinsightspodcast.podbean.com/\n2027 Predictions: https://www.astrologybyceleste.com/2026-astrology-predictions-panel-1\n\nElisabeth Grace:\n\nWebsite: https://elisabethgrace.com/\nSubstack: https://elisabethgrace.substack.com\n\nMary Gaterud:\n\nWebsite: https://purazuma.com\nIG: @_purazuma_\n\nBrilliant graphic designs by Mary Gaterud at: https://purazuma.com/\n\nChapters:\n\n00:00 Introduction \n00:26 How Is Everyone Feeling?\n03:25 Election Predictions\n13:27 What Happens Next?!\n21:13 Chart Examples \n41:51 Learn More About Our Panel! \n46:58 Conclusion\n\nRecorded November 2026\n\nOpinion Disclaimer: All views expressed by the host and the guest(s) are solely theirs and may not reflect the views of Kepler College. Please keep your comments respectful. Thank you",
       "link": "https://www.youtube.com/watch?v=zhYPsFFVmCQ",
-      "publishedAt": "2026-11-05T16:00:15.000Z"
+      "publishedAt": "2026-11-05T16:00:15.000Z",
+      "stale": true
     },
     {
       "platform": "substack",
@@ -112,28 +135,6 @@
       "publishedAt": "2026-11-03T16:53:54.000Z"
     },
     {
-      "platform": "substack",
-      "creator": "profoundideas",
-      "creatorUrl": "https://ideas.profoundideas.com/",
-      "creatorAvatar": "",
-      "title": "An intellectual renaissance is coming. Here’s how you can win.",
-      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/daa46015-58ed-430e-88ae-858a8bb7ed2a_4186x2031.jpeg",
-      "summary": "Live like a profound thinker in 3 steps.",
-      "link": "https://ideas.profoundideas.com/p/an-intellectual-renaissance-is-coming",
-      "publishedAt": "2026-10-29T14:24:41.000Z"
-    },
-    {
-      "platform": "bilibili",
-      "creator": "这个月",
-      "creatorUrl": "https://space.bilibili.com/173986740",
-      "creatorAvatar": "",
-      "title": "爱情和独立，是有矛盾的",
-      "cover": "https://i2.hdslb.com/bfs/archive/fad45485b1a72cdea2f32d68b472c02e07c310f1.jpg",
-      "link": "https://www.bilibili.com/video/BV1taxL6oE5B",
-      "publishedAt": "2026-10-28T10:00:00.000Z",
-      "stale": true
-    },
-    {
       "platform": "bilibili",
       "creator": "花大钱",
       "creatorUrl": "https://space.bilibili.com/384292139",
@@ -141,8 +142,7 @@
       "title": "当代择偶困境：上嫁上娶/速食爱情/强女单身真相",
       "cover": "https://i2.hdslb.com/bfs/archive/192bbed4dcd4bcc7b79ce9eecaac7afb472ff85a.jpg",
       "link": "https://www.bilibili.com/video/BV1z3Yb6PEL4",
-      "publishedAt": "2026-09-09T11:59:05.000Z",
-      "stale": true
+      "publishedAt": "2026-09-09T11:59:05.000Z"
     },
     {
       "platform": "bilibili",
